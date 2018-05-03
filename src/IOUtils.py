@@ -15,8 +15,8 @@ class IOUtils:
         matrix_str = fp.read()
         matrix = np.array(eval(matrix_str)).astype('object')
 
-        for i in range(matrix.shape[0]):
-            for j in range(matrix.shape[1]):
-                matrix[i][j] = Fraction(matrix[i][j])
+        #for i in range(matrix.shape[0]):
+        #    for j in range(matrix.shape[1]):
+        #        matrix[i][j] = Fraction(matrix[i][j])
 
         return matrix
