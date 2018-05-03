@@ -11,13 +11,15 @@ class LinearProgramming:
 
     Note that FPI representation is also implemented. 
     """
-    __tableau  = None
-    __num_rows = 0
-    __num_rows = 0   
+    __tableau     = None
+    __num_rows    = 0
+    __num_rows    = 0
+    __lp_init_col = 0   
  
     def __init__(self, num_rows, num_cols, input_matrix):
         self.__num_rows = num_rows
         self.__num_cols = num_cols
+        self.__lp_init_col = num_rows
         self.__make_tableau(input_matrix)
 
     def get_tableau(self):
@@ -25,6 +27,26 @@ class LinearProgramming:
         Return the linear programming tableau
         """
         return self.__tableau
+
+    def get_LP_init_column(self):
+        """
+        Return the column index where the LP starts in the tableau.
+        
+        This is necessary because we added a matrix to left of the
+        LP matrix for registering the Gaussian operations that have
+        been applied.
+        """
+        return self.__lp_init_col
+
+    def is_c_great(self):
+        """
+        Verify if the 'c' array, in the LP, is great.
+        Return True or False.
+        """
+        for i in xrange(self.__lp_init_col, self.__tableau.shape[1] - 1):
+            if (self.__tableau[0, i] < 0):
+                return False               
+        return True
 
     def __make_tableau(self, input_matrix):
         """
