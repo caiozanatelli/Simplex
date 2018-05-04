@@ -50,17 +50,22 @@ class LinearProgramming:
         return self.__tableau[i, j]
 
 
-    def get_c_neg_entries_cols(self):
+    def set_tableau_elem(self, i, j, value):
+        self.__tableau[i, j] = value
+
+
+    def get_first_neg_entry_col_in_c(self):
         """
         Verify whether the 'c' array in the LP is in great status.
-        Return a list with all indexes where there is a neg entry in c.
+        
+        Return the first index where there is a neg entry in c.
+        Return -1 if there is no neg entrie in c.
         """
-        cols_neg_entries_in_c = []
         for i in xrange(self.__lp_init_col, self.__tableau.shape[1] - 1):
             if (self.__tableau[0, i] < 0):
-                cols_neg_entries_in_c.append(i)
+                return i
 
-        return cols_neg_entries_in_c
+        return -1
 
 
     def get_b_neg_entries_rows(self):

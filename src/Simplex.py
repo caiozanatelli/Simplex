@@ -7,6 +7,8 @@ class Simplex:
     __lp = None
     __obj_func_c = None
     __b_array = None
+    __feasible_base_solution = None
+
 
     def __init__(self, num_rows, num_cols, input_matrix):
         IOUtils.print_header_line_screen()
@@ -24,17 +26,17 @@ class Simplex:
         IOUtils.print_header_line_screen()
 
         # Get the neg entries in both c and b arrays from the tableau
-        index_list_c_neg_values = self.__lp.get_c_neg_entries_cols()
+        index_neg_entry_in_c   = self.__lp.get_first_neg_entry_col_in_c()
         index_list_b_neg_values = self.__lp.get_b_neg_entries_rows()
 
-        if not index_list_c_neg_values:
+        if index_neg_entry_in_c < 0:
             print(">> The c array is in great status: Dual Simplex will be used.")
         else:
             print(">> The c array is not in great status: Primal Simplex will be used.")
             
             if not index_list_b_neg_values:
                 print(">>>> All entries in b are non-negative. No need for an auxiliar LP.")
-                self.__primal_simplex(index_list_c_neg_values)
+                self.__apply_primal_simplex()
             else:
                 print(">>>> There are negative entries in b. An auxiliar LP is needed.")
                 aux_lp = self.__create_auxiliar_lp()
@@ -49,17 +51,41 @@ class Simplex:
         self.__b_array = self.__lp.get_tableau()[1:,-1]
 
 
-    def __primal_simplex(self, index_list_c_neg_values):
-        pivot_elem_index = self.__get_primal_pivot_element(index_list_c_neg_values)
-        
+    def __apply_primal_simplex(self):
+        IOUtils.print_header_line_screen()
+        print(">> Starting Primal Simplex")
+        IOUtils.print_header_line_screen()
 
-    def __dual_simplex(self):
+        while True:
+            # Get neg entries in the a
+            neg_entry_index_in_c = self.__lp.get_first_neg_entry_col_in_c()
+
+            # There is no neg entry in c, then Primal Simplex is over
+            if (neg_entry_index_in_c < 0):
+                print(">>>> There is no entry in c to pivotate. Simplex is over.")
+                break
+
+            print(">>>> Searching for element to pivotate")
+            # Choose one element (row, column) in the neg column to pivotate
+            row, col = self.__get_primal_pivot_element(neg_entry_index_in_c)
+
+            if row < 0:
+                print(">>>> There is no more elements to pivotate.")
+                print(">>>> The LP is ilimited! <<<<")
+                break
+            else:
+                print(">>>>>> The element chosen is " + str(self.__lp.get_tableau_elem(row, col))
+                                                      + " at the position (" + str(row) + ", " + str(col) + ")")
+                self.__primal_pivotation(row, col)
+            
+
+    def __apply_dual_simplex(self):
         pass
 
 
-    def __get_primal_pivot_element(self, index_list_c_neg_values):
+    def __get_primal_pivot_element(self, neg_entry_index):
         # Choosing the first neg column in the c array for pivotating
-        pivot_col = index_list_c_neg_values[0]
+        pivot_col = neg_entry_index
         pivot_row = -1
         min_ratio = Fraction(-1)
 
@@ -70,10 +96,47 @@ class Simplex:
             # Check if we found an element with a better ratio
             if tableau_candidate_pivot > 0:
                 curr_ratio = self.__b_array[i] / tableau_candidate_pivot
-                if (curr_ratio > min_ratio):
+
+                if min_ratio < 0 or curr_ratio < min_ratio:
+                    min_ratio = curr_ratio
                     pivot_row = i + 1
 
         # If pivot_row = -1, then the LP is ilimited
         return pivot_row, pivot_col
 
-    
+
+    def __primal_pivotation(self, row, col):
+        print(">>>> Pivotating element at position (" + str(row) + ", " + str(col) + ")")
+
+        tableau_num_rows = self.__lp.get_tableau_num_rows()
+        tableau_num_cols = self.__lp.get_tableau_num_cols()
+        pivot_value = self.__lp.get_tableau_elem(row, col)
+
+        # Dividing the pivot line by the pivot's value
+        if (pivot_value != 1):
+            for i in xrange(tableau_num_cols):
+                curr_elem = self.__lp.get_tableau_elem(row, i)
+                self.__lp.set_tableau_elem(row, i, curr_elem / pivot_value)
+
+            # This should result in 1
+            pivot_value = self.__lp.get_tableau_elem(row, col)
+        else:
+            for i in xrange(tableau_num_rows):
+                if (i == row):
+                    continue
+
+                sum_pivot_factor  = -self.__lp.get_tableau_elem(i, col)
+
+                for j in xrange(tableau_num_cols):
+                    curr_elem = self.__lp.get_tableau_elem(i, j)
+                    elem_in_pivot_row = self.__lp.get_tableau_elem(row, j)
+
+                    new_elem_value = curr_elem + sum_pivot_factor*elem_in_pivot_row
+                    self.__lp.set_tableau_elem(i, j, new_elem_value)
+                    
+
+        print(">>>>>> DONE.")
+        print(">>>> Tableau after the pivotation: ")
+        IOUtils.print_header_line_screen()
+        print(self.__lp.get_tableau())
+        IOUtils.print_header_line_screen()
