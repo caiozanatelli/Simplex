@@ -21,7 +21,11 @@ class LinearProgramming:
         self.__num_rows = num_rows
         self.__num_cols = num_cols
         self.__lp_init_col = num_rows
+        
+        # Create the tableau
         self.__make_tableau(input_matrix)
+        # Put tableau in canonical extended form
+        self.__tableau = self.get_extended_canonical_tableau()
 
 
     def get_tableau(self):
@@ -44,23 +48,32 @@ class LinearProgramming:
 
     def get_tableau_elem(self, i, j):
         return self.__tableau[i, j]
-        
+
 
     def get_c_neg_entries_cols(self):
         """
-        Verify if the 'c' array, in the LP, is great.
-        Return True or False.
+        Verify whether the 'c' array in the LP is in great status.
+        Return a list with all indexes where there is a neg entry in c.
         """
-        #for i in xrange(self.__lp_init_col, self.__tableau.shape[1] - 1):
-        #    if (self.__tableau[0, i] < 0):
-        #        return False               
-        #return True
         cols_neg_entries_in_c = []
         for i in xrange(self.__lp_init_col, self.__tableau.shape[1] - 1):
             if (self.__tableau[0, i] < 0):
                 cols_neg_entries_in_c.append(i)
 
         return cols_neg_entries_in_c
+
+
+    def get_b_neg_entries_rows(self):
+        """
+        Verify whether the 'b' array in the LP has neg entries
+        Return a list with all indexes where there is a neg entry in b.
+        """
+        rows_neg_entries_in_b = []
+        for i in xrange(self.__tableau.shape[0] - 1):
+            if (self.__tableau[i + 1, -1] < 0):
+                rows_neg_entries_in_b.append(i)
+
+        return rows_neg_entries_in_b
 
 
     def get_tableau_num_rows(self):
@@ -71,12 +84,39 @@ class LinearProgramming:
         return self.__tableau.shape[1]
 
 
+    def get_extended_canonical_tableau(self):
+        print(">>>> Generating extended canonical tableau...")
+        print(">>>> DONE.")
+
+        orig_tableau = np.copy(self.__tableau)
+        num_rows = self.get_tableau_num_rows()
+        num_cols = self.get_tableau_num_cols()
+        id_matrix = np.identity(num_rows - 1)
+        extended_lp  = np.zeros((num_rows, num_rows + num_cols - 1)).astype('object')
+        
+        for i in xrange(num_rows):
+            # Put the tableau elements except the b array
+            for j in xrange(num_cols - 1):
+                extended_lp[i, j] = orig_tableau[i, j]
+            # Put the identity matrix for fpi variables and add 0s to the c array
+            for j in range(0, num_rows - 1):
+                if i == 0:
+                    extended_lp[i, j + num_cols - 1] = Fraction(0)
+                else:
+                    extended_lp[i, j + num_cols - 1] = Fraction(id_matrix[i - 1, j])
+        # Fill the b array in the new tableau
+        extended_lp[:, -1] = orig_tableau[:, -1]
+
+        return extended_lp
+
+
     def __make_tableau(self, input_matrix):
         """
         Create the extended tableau for representing the linear programming.
         This method also puts the LP in FPI.
         """
-        print(">> Creating canonical Tableau...")
+        print(">> Creating tableau for the linear programming...")
+        print(">> DONE.")
     
         # Extracting components information from the linear programming
         c = input_matrix[0][:-1]
