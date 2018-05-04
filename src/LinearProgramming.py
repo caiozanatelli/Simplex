@@ -13,20 +13,23 @@ class LinearProgramming:
     """
     __tableau     = None
     __num_rows    = 0
-    __num_rows    = 0
+    __num_cols    = 0
     __lp_init_col = 0   
  
+
     def __init__(self, num_rows, num_cols, input_matrix):
         self.__num_rows = num_rows
         self.__num_cols = num_cols
         self.__lp_init_col = num_rows
         self.__make_tableau(input_matrix)
 
+
     def get_tableau(self):
         """
         Return the linear programming tableau
         """
         return self.__tableau
+
 
     def get_LP_init_column(self):
         """
@@ -38,15 +41,35 @@ class LinearProgramming:
         """
         return self.__lp_init_col
 
-    def is_c_great(self):
+
+    def get_tableau_elem(self, i, j):
+        return self.__tableau[i, j]
+        
+
+    def get_c_neg_entries_cols(self):
         """
         Verify if the 'c' array, in the LP, is great.
         Return True or False.
         """
+        #for i in xrange(self.__lp_init_col, self.__tableau.shape[1] - 1):
+        #    if (self.__tableau[0, i] < 0):
+        #        return False               
+        #return True
+        cols_neg_entries_in_c = []
         for i in xrange(self.__lp_init_col, self.__tableau.shape[1] - 1):
             if (self.__tableau[0, i] < 0):
-                return False               
-        return True
+                cols_neg_entries_in_c.append(i)
+
+        return cols_neg_entries_in_c
+
+
+    def get_tableau_num_rows(self):
+        return self.__tableau.shape[0]
+
+
+    def get_tableau_num_cols(self):
+        return self.__tableau.shape[1]
+
 
     def __make_tableau(self, input_matrix):
         """
@@ -75,9 +98,9 @@ class LinearProgramming:
             for j in xrange(0, self.__tableau.shape[1]):
                 self.__tableau[i, j] = Fraction(self.__tableau[i, j])
         
-        print(">> DONE. The following Tableau has been created: ")
-        print("*************************************************")
-        print(self.get_tableau())
-        print("*************************************************")
-        print("")
+        #print(">> DONE. The following Tableau has been created: ")
+        #print("*************************************************")
+        #print(self.get_tableau())
+        #print("*************************************************")
+        #print("")
 
