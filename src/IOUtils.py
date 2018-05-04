@@ -3,6 +3,10 @@ from fractions import Fraction
 
 class IOUtils:
     
+    @classmethod
+    def print_header_line_screen(cls):
+        print("###################################################################")
+
     def read_input(self, file_dir):
         fp = open(file_dir, 'r')
         

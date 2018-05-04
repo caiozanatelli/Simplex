@@ -1,6 +1,7 @@
 import numpy as np
 from fractions import Fraction
 from LinearProgramming import LinearProgramming
+from IOUtils import IOUtils
 
 class Simplex:
     __lp = None
@@ -8,8 +9,10 @@ class Simplex:
     __b_array = None
 
     def __init__(self, num_rows, num_cols, input_matrix):
+        IOUtils.print_header_line_screen()
         print(">> Starting Simplex...")
-        
+        IOUtils.print_header_line_screen()
+
         # Create the tableau that represents the linear programming
         self.__lp = LinearProgramming(2, 3, input_matrix)
         # Set the c objective function and the b array
@@ -18,18 +21,23 @@ class Simplex:
 
 
     def solve(self):
-        index_list_c_neg_values = self.__lp.get_c_neg_entries_cols()
-        
-        if not index_list_c_neg_values:
-            print(">> The c array in the linear programming is in great status.")
-        else:
-            print(">> The c array in the linear programming is not in great status.")
+        IOUtils.print_header_line_screen()
 
-            index_list_b_neg_values = self.__lp.get_b_neg_entries_rows()
-            #if not index_list_b_neg_values:
-            #    self.__primal_simplex(index_list_c_neg_values)
-            #else:
-            aux_lp = self.__create_auxiliar_lp()
+        # Get the neg entries in both c and b arrays from the tableau
+        index_list_c_neg_values = self.__lp.get_c_neg_entries_cols()
+        index_list_b_neg_values = self.__lp.get_b_neg_entries_rows()
+
+        if not index_list_c_neg_values:
+            print(">> The c array is in great status: Dual Simplex will be used.")
+        else:
+            print(">> The c array is not in great status: Primal Simplex will be used.")
+            
+            if not index_list_b_neg_values:
+                print(">>>> All entries in b are non-negative. No need for an auxiliar LP.")
+                self.__primal_simplex(index_list_c_neg_values)
+            else:
+                print(">>>> There are negative entries in b. An auxiliar LP is needed.")
+                aux_lp = self.__create_auxiliar_lp()
 
 
     def __create_auxiliar_lp(self):
@@ -67,3 +75,5 @@ class Simplex:
 
         # If pivot_row = -1, then the LP is ilimited
         return pivot_row, pivot_col
+
+    

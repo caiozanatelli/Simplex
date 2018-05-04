@@ -86,7 +86,7 @@ class LinearProgramming:
 
     def get_extended_canonical_tableau(self):
         print(">>>> Generating extended canonical tableau...")
-        print(">>>> DONE.")
+        print(">>>>>> DONE.")
 
         orig_tableau = np.copy(self.__tableau)
         num_rows = self.get_tableau_num_rows()
@@ -115,8 +115,8 @@ class LinearProgramming:
         Create the extended tableau for representing the linear programming.
         This method also puts the LP in FPI.
         """
-        print(">> Creating tableau for the linear programming...")
-        print(">> DONE.")
+        print(">>>> Creating tableau for the linear programming...")
+        print(">>>>>> DONE.")
     
         # Extracting components information from the linear programming
         c = input_matrix[0][:-1]
@@ -131,7 +131,7 @@ class LinearProgramming:
                             np.concatenate((np.zeros((1, 1)), b.T), axis=0)))
 
         print(">>>> Setting Tableau elements as fractions...")
-        print(">>>> DONE.")
+        print(">>>>>> DONE.")
         
         # Changing the tableau elements into fractions for better precision
         for i in xrange(0, self.__tableau.shape[0]):
