@@ -6,7 +6,6 @@ from IOUtils import IOUtils
 class Simplex:
     __lp = None
     __obj_func_c = None
-    __b_array = None
     __feasible_base_solution = None
 
 
@@ -19,7 +18,6 @@ class Simplex:
         self.__lp = LinearProgramming(2, 3, input_matrix)
         # Set the c objective function and the b array
         self.__obj_func_c = input_matrix[0][:-1]
-        self.__update_curr_b_array()
 
 
     def solve(self):
@@ -29,8 +27,11 @@ class Simplex:
         index_neg_entry_in_c   = self.__lp.get_first_neg_entry_col_in_c()
         index_list_b_neg_values = self.__lp.get_b_neg_entries_rows()
 
+        # The c array is in optimum state. Dual Simplex must be used
         if index_neg_entry_in_c < 0:
             print(">> The c array is in optimum status: Dual Simplex will be used.")
+
+            self.__apply_dual_simplex()
         else:
             print(">> The c array is not in optimum status: Primal Simplex will be used.")
             
@@ -47,10 +48,6 @@ class Simplex:
     def __create_auxiliar_lp(self):
         print(">>>> Creating auxiliar linear programming tableau for finding a basic solution...")
         print(self.__lp.get_extended_canonical_tableau())
-
-
-    def __update_curr_b_array(self):
-        self.__b_array = self.__lp.get_tableau()[1:,-1]
 
 
     def __apply_primal_simplex(self):
@@ -88,7 +85,7 @@ class Simplex:
                                      + " at the position (" + str(row) + ", " + str(col) + ")")
 
                 # Apply Primal Simplex on the tableau
-                self.__primal_pivotation(row, col)
+                self.__pivotate_element(row, col)
         
 
         if lp_has_unique_optimum_value:    
@@ -99,33 +96,10 @@ class Simplex:
             pass
 
 
-    def __apply_dual_simplex(self):
-        pass
-
-
-    def __get_primal_pivot_element(self, neg_entry_index):
-        # Choosing the first neg column in the c array for pivotating
-        pivot_col = neg_entry_index
-        pivot_row = -1
-        min_ratio = Fraction(-1)
-
-        # Find the element with min ratio in the column pivot_col in matrix A for pivotating
-        for i in xrange(self.__lp.get_tableau().shape[0] - 1):
-            tableau_candidate_pivot = self.__lp.get_tableau_elem(i + 1, pivot_col)
-
-            # Check if we found an element with a better ratio
-            if tableau_candidate_pivot > 0:
-                curr_ratio = self.__b_array[i] / tableau_candidate_pivot
-
-                if min_ratio < 0 or curr_ratio < min_ratio:
-                    min_ratio = curr_ratio
-                    pivot_row = i + 1
-
-        # If pivot_row = -1, then the LP is ilimited
-        return pivot_row, pivot_col
-
-
-    def __primal_pivotation(self, row, col):
+    def __pivotate_element(self, row, col):
+        """
+        Pivotate the element at position (row, col) in the tableau.
+        """
         print(">>>> Pivotating element at position (" + str(row) + ", " + str(col) + ")")
 
         tableau_num_rows = self.__lp.get_tableau_num_rows()
@@ -160,3 +134,72 @@ class Simplex:
         IOUtils.print_header_line_screen()
         print(self.__lp.get_tableau())
         IOUtils.print_header_line_screen()
+
+
+    def __get_primal_pivot_element(self, neg_entry_index):
+        """
+        Select the element for Primal Simplex pivotation by choosing the one with minimum ratio.
+        Return a pair (row, col) for the chosen element.
+        """
+
+        # Choosing the first neg column in the c array for pivotating
+        pivot_col = neg_entry_index
+        pivot_row = -1
+        min_ratio = Fraction(-1)
+
+        c_entry_value = abs(self.__lp.get_tableau_elem(0, pivot_col))
+
+        # Find the element with min ratio in the column pivot_col in matrix A for pivotating
+        for i in xrange(self.__lp.get_tableau().shape[0] - 1):
+            tableau_candidate_pivot = self.__lp.get_tableau_elem(i + 1, pivot_col)
+
+            # Check if the current element can be a candidate for pivot
+            if tableau_candidate_pivot > 0:
+                curr_ratio = c_entry_value / tableau_candidate_pivot
+
+                # Check if we found an element with a better ratio
+                if min_ratio < 0 or curr_ratio < min_ratio:
+                    min_ratio = curr_ratio
+                    pivot_row = i + 1
+
+        # If pivot_row = -1, then the LP is ilimited
+        return pivot_row, pivot_col
+
+
+    def __apply_dual_simplex(self):
+        pass
+
+
+    def __get_dual_pivot_element(self, neg_entry_index):
+        """
+        Select the element for Dual Simple pivotation by choosing the one with minimum ratio.
+        Return a pair (row, col) for the chosen element.
+        """
+
+        pivot_row = neg_entry_index
+        pivot_col = -1
+        min_ratio = Fraction(-1)
+
+        tableau_num_rows = self.__lp.get_tableau_num_rows()
+        tableau_num_cols = self.__lp.get_tableau_num_cols()
+
+        b_entry_value = self.__lp.get.tableau.elem(pivot_row, tableau_num_rows - 1)
+
+        # Find the element with min ratio in the row pivote_row in matrix A for pivotating
+        for i in xrange(tableau_num_cols - 1):
+            tableau_candidate_pivot = self.__lp.get_tableau_elem(row, i)
+
+            # Check if the current element can be a candidate for pivot
+            if tableau_candidate_pivot < 0:
+                curr_ratio = b_entry_value / tableau_candidate_pivot
+
+                # Check if we found an element with a better ratio
+                if min_ratio < 0 or curr_ratio < min_ratio:
+                    min_ratio = curr_ratio
+                    pivot_col = i
+
+        # If pivot_col = -1, then there is no element to pivotate
+        return pivot_row, pivot_col
+
+    def __dual_pivotation(self):
+        pass
