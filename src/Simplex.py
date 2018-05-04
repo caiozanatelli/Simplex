@@ -30,15 +30,17 @@ class Simplex:
         index_list_b_neg_values = self.__lp.get_b_neg_entries_rows()
 
         if index_neg_entry_in_c < 0:
-            print(">> The c array is in great status: Dual Simplex will be used.")
+            print(">> The c array is in optimum status: Dual Simplex will be used.")
         else:
-            print(">> The c array is not in great status: Primal Simplex will be used.")
+            print(">> The c array is not in optimum status: Primal Simplex will be used.")
             
             if not index_list_b_neg_values:
                 print(">>>> All entries in b are non-negative. No need for an auxiliar LP.")
+                # Solve LP through Primal Simplex algorithm
                 self.__apply_primal_simplex()
             else:
                 print(">>>> There are negative entries in b. An auxiliar LP is needed.")
+                # Create an auxiliar LP to find a basic solution to the original problem
                 aux_lp = self.__create_auxiliar_lp()
 
 
@@ -56,28 +58,46 @@ class Simplex:
         print(">> Starting Primal Simplex")
         IOUtils.print_header_line_screen()
 
+        lp_has_unique_optimum_value = True
+
         while True:
             # Get neg entries in the a
             neg_entry_index_in_c = self.__lp.get_first_neg_entry_col_in_c()
 
             # There is no neg entry in c, then Primal Simplex is over
             if (neg_entry_index_in_c < 0):
-                print(">>>> There is no entry in c to pivotate. Simplex is over.")
+                print(">>>> There is no entry in c to optimize. Simplex is over.")
+                IOUtils.print_header_line_screen()
+
+                lp_has_unique_optimum_value = True
                 break
 
             print(">>>> Searching for element to pivotate")
             # Choose one element (row, column) in the neg column to pivotate
             row, col = self.__get_primal_pivot_element(neg_entry_index_in_c)
 
+            # There is no negative entry in the c array. The LP is then ilimited 
             if row < 0:
                 print(">>>> There is no more elements to pivotate.")
                 print(">>>> The LP is ilimited! <<<<")
+
+                lp_has_unique_optimum_value = False
                 break
-            else:
+            else: # There is element to be pivotated has been chosen
                 print(">>>>>> The element chosen is " + str(self.__lp.get_tableau_elem(row, col))
-                                                      + " at the position (" + str(row) + ", " + str(col) + ")")
+                                     + " at the position (" + str(row) + ", " + str(col) + ")")
+
+                # Apply Primal Simplex on the tableau
                 self.__primal_pivotation(row, col)
-            
+        
+
+        if lp_has_unique_optimum_value:    
+            print(">> Maximum objective value: " + str(self.__lp.get_objective_value()))
+            print(">> Optimality certificate: " + str(self.__lp.get_optimality_certificate()))
+            IOUtils.print_header_line_screen()
+        else:
+            pass
+
 
     def __apply_dual_simplex(self):
         pass
@@ -133,7 +153,7 @@ class Simplex:
 
                     new_elem_value = curr_elem + sum_pivot_factor*elem_in_pivot_row
                     self.__lp.set_tableau_elem(i, j, new_elem_value)
-                    
+
 
         print(">>>>>> DONE.")
         print(">>>> Tableau after the pivotation: ")

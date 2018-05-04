@@ -28,67 +28,6 @@ class LinearProgramming:
         self.__tableau = self.get_extended_canonical_tableau()
 
 
-    def get_tableau(self):
-        """
-        Return the linear programming tableau
-        """
-        return self.__tableau
-
-
-    def get_LP_init_column(self):
-        """
-        Return the column index where the LP starts in the tableau.
-        
-        This is necessary because we added a matrix to left of the
-        LP matrix for registering the Gaussian operations that have
-        been applied.
-        """
-        return self.__lp_init_col
-
-
-    def get_tableau_elem(self, i, j):
-        return self.__tableau[i, j]
-
-
-    def set_tableau_elem(self, i, j, value):
-        self.__tableau[i, j] = value
-
-
-    def get_first_neg_entry_col_in_c(self):
-        """
-        Verify whether the 'c' array in the LP is in great status.
-        
-        Return the first index where there is a neg entry in c.
-        Return -1 if there is no neg entrie in c.
-        """
-        for i in xrange(self.__lp_init_col, self.__tableau.shape[1] - 1):
-            if (self.__tableau[0, i] < 0):
-                return i
-
-        return -1
-
-
-    def get_b_neg_entries_rows(self):
-        """
-        Verify whether the 'b' array in the LP has neg entries
-        Return a list with all indexes where there is a neg entry in b.
-        """
-        rows_neg_entries_in_b = []
-        for i in xrange(self.__tableau.shape[0] - 1):
-            if (self.__tableau[i + 1, -1] < 0):
-                rows_neg_entries_in_b.append(i)
-
-        return rows_neg_entries_in_b
-
-
-    def get_tableau_num_rows(self):
-        return self.__tableau.shape[0]
-
-
-    def get_tableau_num_cols(self):
-        return self.__tableau.shape[1]
-
-
     def get_extended_canonical_tableau(self):
         print(">>>> Generating extended canonical tableau...")
         print(">>>>>> DONE.")
@@ -142,10 +81,97 @@ class LinearProgramming:
         for i in xrange(0, self.__tableau.shape[0]):
             for j in xrange(0, self.__tableau.shape[1]):
                 self.__tableau[i, j] = Fraction(self.__tableau[i, j])
+
+
+    def get_tableau(self):
+        """
+        Return the linear programming tableau
+        """
+        return self.__tableau
+
+
+    def get_LP_init_column(self):
+        """
+        Return the column index where the LP starts in the tableau.
         
-        #print(">> DONE. The following Tableau has been created: ")
-        #print("*************************************************")
-        #print(self.get_tableau())
-        #print("*************************************************")
-        #print("")
+        This is necessary because we added a matrix to left of the
+        LP matrix for registering the Gaussian operations that have
+        been applied.
+        """
+        return self.__lp_init_col
+
+
+    def get_tableau_elem(self, i, j):
+        """
+        Return the element at position (i, j) in the tableau
+        """
+        return self.__tableau[i, j]
+
+
+    def set_tableau_elem(self, i, j, value):
+        """
+        Set a value to the element at position (i, j) in the tableau
+        """
+        self.__tableau[i, j] = value
+
+
+    def get_objective_value(self):
+        """
+        Return the objective value from the tableau. 
+
+        Note that this value is optimum if the LP is limited and the 
+        Simplex algorithm has been applied to the tableau. 
+        """
+        return self.__tableau[0, -1]
+
+
+    def get_optimality_certificate(self):
+        """
+        Return the optimality certificate for the LP. 
+
+        This certificate is obtained from the matrix that register the 
+        operations over the tableau.
+        """
+        return self.__tableau[0:self.__num_rows - 1]
+
+
+    def get_first_neg_entry_col_in_c(self):
+        """
+        Verify whether the 'c' array in the LP is in great status.
+        
+        Return the first index where there is a neg entry in c.
+        Return -1 if there is no neg entrie in c.
+        """
+        for i in xrange(self.__lp_init_col, self.__tableau.shape[1] - 1):
+            if (self.__tableau[0, i] < 0):
+                return i
+
+        return -1
+
+
+    def get_b_neg_entries_rows(self):
+        """
+        Verify whether the 'b' array in the LP has neg entries
+        Return a list with all indexes where there is a neg entry in b.
+        """
+        rows_neg_entries_in_b = []
+        for i in xrange(self.__tableau.shape[0] - 1):
+            if (self.__tableau[i + 1, -1] < 0):
+                rows_neg_entries_in_b.append(i)
+
+        return rows_neg_entries_in_b
+
+
+    def get_tableau_num_rows(self):
+        """
+        Return the tableau's number of rows
+        """
+        return self.__tableau.shape[0]
+
+
+    def get_tableau_num_cols(self):
+        """
+        Return the tableau's number of columns
+        """
+        return self.__tableau.shape[1]
 
