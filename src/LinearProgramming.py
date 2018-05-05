@@ -54,6 +54,27 @@ class LinearProgramming:
         return extended_lp
 
 
+    def make_auxiliar_lp(self, index_list_b_neg_values):
+        # Multiplying lines by -1 in order to make the b array non-negative
+        for i in index_list_b_neg_values:
+            for j in range(self.get_LP_init_column(), self.get_tableau_num_cols()):
+                elem = self.get_tableau_elem(i, j)
+                self.set_tableau_elem(i, j, elem * (-1)) 
+
+        # New tableau with extra variables
+        self.set_tableau(self.get_extended_canonical_tableau())
+
+        rows = self.get_tableau_num_rows()
+        cols = self.get_tableau_num_cols()
+
+        # Changing the objective function to the new variables
+        for i in xrange(cols):
+            value = 0
+            if i < cols - 1 and i >= cols - rows:
+                value = 1
+            self.__tableau[0, i] = Fraction(value)
+
+
     def __make_tableau(self, input_matrix):
         """
         Create the extended tableau for representing the linear programming.
@@ -81,6 +102,10 @@ class LinearProgramming:
         for i in xrange(0, self.__tableau.shape[0]):
             for j in xrange(0, self.__tableau.shape[1]):
                 self.__tableau[i, j] = Fraction(self.__tableau[i, j])
+
+
+    def set_tableau(self, tableau):
+        self.__tableau = tableau
 
 
     def get_tableau(self):
@@ -157,7 +182,7 @@ class LinearProgramming:
         rows_neg_entries_in_b = []
         for i in xrange(self.__tableau.shape[0] - 1):
             if (self.__tableau[i + 1, -1] < 0):
-                rows_neg_entries_in_b.append(i)
+                rows_neg_entries_in_b.append(i + 1)
 
         return rows_neg_entries_in_b
 

@@ -2,6 +2,7 @@ import numpy as np
 from fractions import Fraction
 from LinearProgramming import LinearProgramming
 from IOUtils import IOUtils
+from copy import deepcopy
 
 class Simplex:
     __lp = None
@@ -41,8 +42,21 @@ class Simplex:
                 self.__apply_primal_simplex()
             else:
                 print(">>>> There are negative entries in b. An auxiliar LP is needed.")
+                print(">>>> Creating auxiliar LP to find a feasible basic solution to the problem")
+
                 # Create an auxiliar LP to find a basic solution to the original problem
-                aux_lp = self.__create_auxiliar_lp()
+                simplex_aux = deepcopy(self)
+                simplex_aux.__lp.make_auxiliar_lp(index_list_b_neg_values)
+                
+                # Pivotate the extra variables to prepare the auxiliar tableau for the primal simplex
+                rows = simplex_aux.__lp.get_tableau_num_rows()
+                cols = simplex_aux.__lp.get_tableau_num_cols()
+                for i in range(1, rows):
+                    simplex_aux.__pivotate_element(i, cols - rows + i - 1)
+
+                simplex_aux.__apply_primal_simplex()
+                
+                # TODO: use the auxiliar solution to solve the original linear programming
 
 
     def __create_auxiliar_lp(self):
@@ -114,19 +128,30 @@ class Simplex:
 
             # This should result in 1
             pivot_value = self.__lp.get_tableau_elem(row, col)
-        else:
-            for i in xrange(tableau_num_rows):
-                if (i == row):
-                    continue
+    
+        for i in xrange(tableau_num_rows):
+            if i == row:
+                continue
+            if self.__lp.get_tableau_elem(i, col) == 0:
+                continue
 
-                sum_pivot_factor  = -self.__lp.get_tableau_elem(i, col)
+            sum_pivot_factor = self.__lp.get_tableau_elem(i, col)
 
-                for j in xrange(tableau_num_cols):
-                    curr_elem = self.__lp.get_tableau_elem(i, j)
-                    elem_in_pivot_row = self.__lp.get_tableau_elem(row, j)
+            for j in xrange(tableau_num_cols):
+                curr_elem = self.__lp.get_tableau_elem(i, j)
+                elem_in_pivot_row = self.__lp.get_tableau_elem(row, j)
+                new_elem_value = curr_elem - sum_pivot_factor*elem_in_pivot_row
+                self.__lp.set_tableau_elem(i, j, new_elem_value)
 
-                    new_elem_value = curr_elem + sum_pivot_factor*elem_in_pivot_row
-                    self.__lp.set_tableau_elem(i, j, new_elem_value)
+
+                #sum_pivot_factor  = self.__lp.get_tableau_elem(i, col)
+
+                #for j in xrange(tableau_num_cols):
+                #    curr_elem = self.__lp.get_tableau_elem(i, j)
+                #    elem_in_pivot_row = self.__lp.get_tableau_elem(row, j)
+
+                #    new_elem_value = curr_elem - sum_pivot_factor*elem_in_pivot_row
+                #    self.__lp.set_tableau_elem(i, j, new_elem_value)
 
 
         print(">>>>>> DONE.")
