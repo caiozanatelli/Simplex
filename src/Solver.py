@@ -2,7 +2,7 @@ from IOUtils import IOUtils
 from LinearProgramming import LinearProgramming
 from Simplex import Simplex
 
-LP_DIR = "../tests/aux_pl_marzano.txt"
+LP_DIR = "../tests/toys/teste6.txt"
 
 if __name__ == '__main__':
     io = IOUtils()

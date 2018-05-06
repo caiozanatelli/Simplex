@@ -1,5 +1,5 @@
-Number of lines:   6
-Number of columns: 1
+Number of lines:   8
+Number of columns: 11
 ###################################################################
 >> Starting Simplex...
 ###################################################################
@@ -15,681 +15,1492 @@ Number of columns: 1
 >>>> Creating auxiliar LP to find a feasible basic solution to the problem
 >>>> Generating extended canonical tableau...
 >>>>>> DONE.
->>>> Pivotating element at position (1, 13)
+>>>> Pivotating element at position (1, 27)
 >>>>>> DONE.
 >>>> Tableau after the pivotation: 
 ###################################################################
 [[Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-22, 1) Fraction(1, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(1, 1)
-  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-3102, 1)]
+  Fraction(0, 1) Fraction(-10, 1) Fraction(-7, 1) Fraction(-7, 1)
+  Fraction(0, 1) Fraction(4, 1) Fraction(-6, 1) Fraction(-10, 1)
+  Fraction(0, 1) Fraction(9, 1) Fraction(8, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-11, 1)]
  [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
+  Fraction(0, 1) Fraction(10, 1) Fraction(7, 1) Fraction(7, 1)
+  Fraction(0, 1) Fraction(-4, 1) Fraction(6, 1) Fraction(10, 1)
+  Fraction(0, 1) Fraction(-9, 1) Fraction(-8, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(11, 1)]
  [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-8, 1) Fraction(2, 1)
+  Fraction(2, 1) Fraction(4, 1) Fraction(6, 1) Fraction(-2, 1)
+  Fraction(4, 1) Fraction(9, 1) Fraction(-6, 1) Fraction(0, 1)
   Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(6, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(9, 1) Fraction(3, 1) Fraction(-3, 1)
+  Fraction(5, 1) Fraction(-9, 1) Fraction(4, 1) Fraction(8, 1)
+  Fraction(-9, 1) Fraction(-7, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
   Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(14, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-8, 1) Fraction(-3, 1) Fraction(9, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(6, 1) Fraction(-10, 1) Fraction(10, 1)
+  Fraction(-8, 1) Fraction(5, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(7, 1) Fraction(5, 1) Fraction(5, 1)
+  Fraction(9, 1) Fraction(2, 1) Fraction(0, 1) Fraction(2, 1)
+  Fraction(-2, 1) Fraction(5, 1) Fraction(7, 1) Fraction(0, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-6, 1) Fraction(-9, 1) Fraction(3, 1)
+  Fraction(-4, 1) Fraction(-6, 1) Fraction(-3, 1) Fraction(-9, 1)
+  Fraction(2, 1) Fraction(0, 1) Fraction(8, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(4, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(7, 1) Fraction(-7, 1) Fraction(-10, 1) Fraction(-4, 1)
+  Fraction(8, 1) Fraction(-7, 1) Fraction(-6, 1) Fraction(-5, 1)
+  Fraction(-3, 1) Fraction(1, 1) Fraction(10, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(12, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(2, 1) Fraction(1, 1) Fraction(-4, 1) Fraction(2, 1)
+  Fraction(7, 1) Fraction(-9, 1) Fraction(9, 1) Fraction(2, 1)
+  Fraction(-7, 1) Fraction(3, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(4, 1)]]
 ###################################################################
->>>> Pivotating element at position (2, 14)
+>>>> Pivotating element at position (2, 28)
 >>>>>> DONE.
 >>>> Tableau after the pivotation: 
 ###################################################################
 [[Fraction(-1, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-94, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-10, 1) Fraction(1, 1) Fraction(-9, 1)
+  Fraction(-2, 1) Fraction(0, 1) Fraction(-12, 1) Fraction(-8, 1)
+  Fraction(-4, 1) Fraction(0, 1) Fraction(14, 1) Fraction(-1, 1)
   Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-13751, 1)]
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-17, 1)]
  [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
+  Fraction(0, 1) Fraction(10, 1) Fraction(7, 1) Fraction(7, 1)
+  Fraction(0, 1) Fraction(-4, 1) Fraction(6, 1) Fraction(10, 1)
+  Fraction(0, 1) Fraction(-9, 1) Fraction(-8, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(11, 1)]
  [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-8, 1) Fraction(2, 1)
+  Fraction(2, 1) Fraction(4, 1) Fraction(6, 1) Fraction(-2, 1)
+  Fraction(4, 1) Fraction(9, 1) Fraction(-6, 1) Fraction(0, 1)
   Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
-###################################################################
->>>> Pivotating element at position (3, 15)
->>>>>> DONE.
->>>> Tableau after the pivotation: 
-###################################################################
-[[Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(63, 1) Fraction(1, 1)
-  Fraction(1, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-37388, 1)]
- [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
- [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
-  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
-###################################################################
->>>> Pivotating element at position (4, 16)
->>>>>> DONE.
->>>> Tableau after the pivotation: 
-###################################################################
-[[Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(153, 1) Fraction(1, 1)
-  Fraction(1, 1) Fraction(-1, 1) Fraction(-1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-50857, 1)]
- [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
- [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
-  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
-###################################################################
->>>> Pivotating element at position (5, 17)
->>>>>> DONE.
->>>> Tableau after the pivotation: 
-###################################################################
-[[Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1)
-  Fraction(-1, 1) Fraction(0, 1) Fraction(417, 1) Fraction(1, 1)
-  Fraction(1, 1) Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-90206, 1)]
- [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
- [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
-  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
-###################################################################
->>>> Pivotating element at position (6, 18)
->>>>>> DONE.
->>>> Tableau after the pivotation: 
-###################################################################
-[[Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1)
-  Fraction(-1, 1) Fraction(1, 1) Fraction(354, 1) Fraction(1, 1)
-  Fraction(1, 1) Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1)
   Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-99378, 1)]
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(6, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(9, 1) Fraction(3, 1) Fraction(-3, 1)
+  Fraction(5, 1) Fraction(-9, 1) Fraction(4, 1) Fraction(8, 1)
+  Fraction(-9, 1) Fraction(-7, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(14, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-8, 1) Fraction(-3, 1) Fraction(9, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(6, 1) Fraction(-10, 1) Fraction(10, 1)
+  Fraction(-8, 1) Fraction(5, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(7, 1) Fraction(5, 1) Fraction(5, 1)
+  Fraction(9, 1) Fraction(2, 1) Fraction(0, 1) Fraction(2, 1)
+  Fraction(-2, 1) Fraction(5, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-6, 1) Fraction(-9, 1) Fraction(3, 1)
+  Fraction(-4, 1) Fraction(-6, 1) Fraction(-3, 1) Fraction(-9, 1)
+  Fraction(2, 1) Fraction(0, 1) Fraction(8, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(4, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(7, 1) Fraction(-7, 1) Fraction(-10, 1) Fraction(-4, 1)
+  Fraction(8, 1) Fraction(-7, 1) Fraction(-6, 1) Fraction(-5, 1)
+  Fraction(-3, 1) Fraction(1, 1) Fraction(10, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(12, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(2, 1) Fraction(1, 1) Fraction(-4, 1) Fraction(2, 1)
+  Fraction(7, 1) Fraction(-9, 1) Fraction(9, 1) Fraction(2, 1)
+  Fraction(-7, 1) Fraction(3, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(4, 1)]]
+###################################################################
+>>>> Pivotating element at position (3, 29)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-3, 1) Fraction(-19, 1) Fraction(-2, 1) Fraction(-6, 1)
+  Fraction(-7, 1) Fraction(9, 1) Fraction(-16, 1) Fraction(-16, 1)
+  Fraction(5, 1) Fraction(7, 1) Fraction(15, 1) Fraction(-1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-31, 1)]
  [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
+  Fraction(0, 1) Fraction(10, 1) Fraction(7, 1) Fraction(7, 1)
+  Fraction(0, 1) Fraction(-4, 1) Fraction(6, 1) Fraction(10, 1)
+  Fraction(0, 1) Fraction(-9, 1) Fraction(-8, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(11, 1)]
  [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-8, 1) Fraction(2, 1)
+  Fraction(2, 1) Fraction(4, 1) Fraction(6, 1) Fraction(-2, 1)
+  Fraction(4, 1) Fraction(9, 1) Fraction(-6, 1) Fraction(0, 1)
   Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(6, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(9, 1) Fraction(3, 1) Fraction(-3, 1)
+  Fraction(5, 1) Fraction(-9, 1) Fraction(4, 1) Fraction(8, 1)
+  Fraction(-9, 1) Fraction(-7, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
   Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(14, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-8, 1) Fraction(-3, 1) Fraction(9, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(6, 1) Fraction(-10, 1) Fraction(10, 1)
+  Fraction(-8, 1) Fraction(5, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(7, 1) Fraction(5, 1) Fraction(5, 1)
+  Fraction(9, 1) Fraction(2, 1) Fraction(0, 1) Fraction(2, 1)
+  Fraction(-2, 1) Fraction(5, 1) Fraction(7, 1) Fraction(0, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-6, 1) Fraction(-9, 1) Fraction(3, 1)
+  Fraction(-4, 1) Fraction(-6, 1) Fraction(-3, 1) Fraction(-9, 1)
+  Fraction(2, 1) Fraction(0, 1) Fraction(8, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(4, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(7, 1) Fraction(-7, 1) Fraction(-10, 1) Fraction(-4, 1)
+  Fraction(8, 1) Fraction(-7, 1) Fraction(-6, 1) Fraction(-5, 1)
+  Fraction(-3, 1) Fraction(1, 1) Fraction(10, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(12, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(2, 1) Fraction(1, 1) Fraction(-4, 1) Fraction(2, 1)
+  Fraction(7, 1) Fraction(-9, 1) Fraction(9, 1) Fraction(2, 1)
+  Fraction(-7, 1) Fraction(3, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(4, 1)]]
+###################################################################
+>>>> Pivotating element at position (4, 30)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(5, 1) Fraction(-16, 1) Fraction(-11, 1) Fraction(-6, 1)
+  Fraction(-8, 1) Fraction(3, 1) Fraction(-6, 1) Fraction(-26, 1)
+  Fraction(13, 1) Fraction(2, 1) Fraction(15, 1) Fraction(-1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-41, 1)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(10, 1) Fraction(7, 1) Fraction(7, 1)
+  Fraction(0, 1) Fraction(-4, 1) Fraction(6, 1) Fraction(10, 1)
+  Fraction(0, 1) Fraction(-9, 1) Fraction(-8, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(11, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-8, 1) Fraction(2, 1)
+  Fraction(2, 1) Fraction(4, 1) Fraction(6, 1) Fraction(-2, 1)
+  Fraction(4, 1) Fraction(9, 1) Fraction(-6, 1) Fraction(0, 1)
   Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(6, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(9, 1) Fraction(3, 1) Fraction(-3, 1)
+  Fraction(5, 1) Fraction(-9, 1) Fraction(4, 1) Fraction(8, 1)
+  Fraction(-9, 1) Fraction(-7, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(14, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-8, 1) Fraction(-3, 1) Fraction(9, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(6, 1) Fraction(-10, 1) Fraction(10, 1)
+  Fraction(-8, 1) Fraction(5, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(7, 1) Fraction(5, 1) Fraction(5, 1)
+  Fraction(9, 1) Fraction(2, 1) Fraction(0, 1) Fraction(2, 1)
+  Fraction(-2, 1) Fraction(5, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-6, 1) Fraction(-9, 1) Fraction(3, 1)
+  Fraction(-4, 1) Fraction(-6, 1) Fraction(-3, 1) Fraction(-9, 1)
+  Fraction(2, 1) Fraction(0, 1) Fraction(8, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(4, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(7, 1) Fraction(-7, 1) Fraction(-10, 1) Fraction(-4, 1)
+  Fraction(8, 1) Fraction(-7, 1) Fraction(-6, 1) Fraction(-5, 1)
+  Fraction(-3, 1) Fraction(1, 1) Fraction(10, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(12, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(2, 1) Fraction(1, 1) Fraction(-4, 1) Fraction(2, 1)
+  Fraction(7, 1) Fraction(-9, 1) Fraction(9, 1) Fraction(2, 1)
+  Fraction(-7, 1) Fraction(3, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(4, 1)]]
+###################################################################
+>>>> Pivotating element at position (5, 31)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(2, 1) Fraction(-23, 1) Fraction(-16, 1) Fraction(-11, 1)
+  Fraction(-17, 1) Fraction(1, 1) Fraction(-6, 1) Fraction(-28, 1)
+  Fraction(15, 1) Fraction(-3, 1) Fraction(8, 1) Fraction(-1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-42, 1)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(10, 1) Fraction(7, 1) Fraction(7, 1)
+  Fraction(0, 1) Fraction(-4, 1) Fraction(6, 1) Fraction(10, 1)
+  Fraction(0, 1) Fraction(-9, 1) Fraction(-8, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(11, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-8, 1) Fraction(2, 1)
+  Fraction(2, 1) Fraction(4, 1) Fraction(6, 1) Fraction(-2, 1)
+  Fraction(4, 1) Fraction(9, 1) Fraction(-6, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(6, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(9, 1) Fraction(3, 1) Fraction(-3, 1)
+  Fraction(5, 1) Fraction(-9, 1) Fraction(4, 1) Fraction(8, 1)
+  Fraction(-9, 1) Fraction(-7, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(14, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-8, 1) Fraction(-3, 1) Fraction(9, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(6, 1) Fraction(-10, 1) Fraction(10, 1)
+  Fraction(-8, 1) Fraction(5, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(7, 1) Fraction(5, 1) Fraction(5, 1)
+  Fraction(9, 1) Fraction(2, 1) Fraction(0, 1) Fraction(2, 1)
+  Fraction(-2, 1) Fraction(5, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-6, 1) Fraction(-9, 1) Fraction(3, 1)
+  Fraction(-4, 1) Fraction(-6, 1) Fraction(-3, 1) Fraction(-9, 1)
+  Fraction(2, 1) Fraction(0, 1) Fraction(8, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(4, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(7, 1) Fraction(-7, 1) Fraction(-10, 1) Fraction(-4, 1)
+  Fraction(8, 1) Fraction(-7, 1) Fraction(-6, 1) Fraction(-5, 1)
+  Fraction(-3, 1) Fraction(1, 1) Fraction(10, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(12, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(2, 1) Fraction(1, 1) Fraction(-4, 1) Fraction(2, 1)
+  Fraction(7, 1) Fraction(-9, 1) Fraction(9, 1) Fraction(2, 1)
+  Fraction(-7, 1) Fraction(3, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(4, 1)]]
+###################################################################
+>>>> Pivotating element at position (6, 32)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(-1, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(2, 1) Fraction(-17, 1) Fraction(-7, 1) Fraction(-14, 1)
+  Fraction(-13, 1) Fraction(7, 1) Fraction(-3, 1) Fraction(-19, 1)
+  Fraction(13, 1) Fraction(-3, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-1, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-46, 1)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(10, 1) Fraction(7, 1) Fraction(7, 1)
+  Fraction(0, 1) Fraction(-4, 1) Fraction(6, 1) Fraction(10, 1)
+  Fraction(0, 1) Fraction(-9, 1) Fraction(-8, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(11, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-8, 1) Fraction(2, 1)
+  Fraction(2, 1) Fraction(4, 1) Fraction(6, 1) Fraction(-2, 1)
+  Fraction(4, 1) Fraction(9, 1) Fraction(-6, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(6, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(9, 1) Fraction(3, 1) Fraction(-3, 1)
+  Fraction(5, 1) Fraction(-9, 1) Fraction(4, 1) Fraction(8, 1)
+  Fraction(-9, 1) Fraction(-7, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(14, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-8, 1) Fraction(-3, 1) Fraction(9, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(6, 1) Fraction(-10, 1) Fraction(10, 1)
+  Fraction(-8, 1) Fraction(5, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(7, 1) Fraction(5, 1) Fraction(5, 1)
+  Fraction(9, 1) Fraction(2, 1) Fraction(0, 1) Fraction(2, 1)
+  Fraction(-2, 1) Fraction(5, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-6, 1) Fraction(-9, 1) Fraction(3, 1)
+  Fraction(-4, 1) Fraction(-6, 1) Fraction(-3, 1) Fraction(-9, 1)
+  Fraction(2, 1) Fraction(0, 1) Fraction(8, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(4, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(7, 1) Fraction(-7, 1) Fraction(-10, 1) Fraction(-4, 1)
+  Fraction(8, 1) Fraction(-7, 1) Fraction(-6, 1) Fraction(-5, 1)
+  Fraction(-3, 1) Fraction(1, 1) Fraction(10, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(12, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(2, 1) Fraction(1, 1) Fraction(-4, 1) Fraction(2, 1)
+  Fraction(7, 1) Fraction(-9, 1) Fraction(9, 1) Fraction(2, 1)
+  Fraction(-7, 1) Fraction(3, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(4, 1)]]
+###################################################################
+>>>> Pivotating element at position (7, 33)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(-1, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(-5, 1) Fraction(-10, 1) Fraction(3, 1) Fraction(-10, 1)
+  Fraction(-21, 1) Fraction(14, 1) Fraction(3, 1) Fraction(-14, 1)
+  Fraction(16, 1) Fraction(-4, 1) Fraction(-10, 1) Fraction(-1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-1, 1)
+  Fraction(-1, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-58, 1)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(10, 1) Fraction(7, 1) Fraction(7, 1)
+  Fraction(0, 1) Fraction(-4, 1) Fraction(6, 1) Fraction(10, 1)
+  Fraction(0, 1) Fraction(-9, 1) Fraction(-8, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(11, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-8, 1) Fraction(2, 1)
+  Fraction(2, 1) Fraction(4, 1) Fraction(6, 1) Fraction(-2, 1)
+  Fraction(4, 1) Fraction(9, 1) Fraction(-6, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(6, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(9, 1) Fraction(3, 1) Fraction(-3, 1)
+  Fraction(5, 1) Fraction(-9, 1) Fraction(4, 1) Fraction(8, 1)
+  Fraction(-9, 1) Fraction(-7, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(14, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-8, 1) Fraction(-3, 1) Fraction(9, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(6, 1) Fraction(-10, 1) Fraction(10, 1)
+  Fraction(-8, 1) Fraction(5, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(7, 1) Fraction(5, 1) Fraction(5, 1)
+  Fraction(9, 1) Fraction(2, 1) Fraction(0, 1) Fraction(2, 1)
+  Fraction(-2, 1) Fraction(5, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-6, 1) Fraction(-9, 1) Fraction(3, 1)
+  Fraction(-4, 1) Fraction(-6, 1) Fraction(-3, 1) Fraction(-9, 1)
+  Fraction(2, 1) Fraction(0, 1) Fraction(8, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(4, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(7, 1) Fraction(-7, 1) Fraction(-10, 1) Fraction(-4, 1)
+  Fraction(8, 1) Fraction(-7, 1) Fraction(-6, 1) Fraction(-5, 1)
+  Fraction(-3, 1) Fraction(1, 1) Fraction(10, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(12, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(2, 1) Fraction(1, 1) Fraction(-4, 1) Fraction(2, 1)
+  Fraction(7, 1) Fraction(-9, 1) Fraction(9, 1) Fraction(2, 1)
+  Fraction(-7, 1) Fraction(3, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(4, 1)]]
+###################################################################
+>>>> Pivotating element at position (8, 34)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(-1, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(-1, 1)
+  Fraction(-7, 1) Fraction(-11, 1) Fraction(7, 1) Fraction(-12, 1)
+  Fraction(-28, 1) Fraction(23, 1) Fraction(-6, 1) Fraction(-16, 1)
+  Fraction(23, 1) Fraction(-7, 1) Fraction(-17, 1) Fraction(-1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-1, 1)
+  Fraction(-1, 1) Fraction(1, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-62, 1)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(10, 1) Fraction(7, 1) Fraction(7, 1)
+  Fraction(0, 1) Fraction(-4, 1) Fraction(6, 1) Fraction(10, 1)
+  Fraction(0, 1) Fraction(-9, 1) Fraction(-8, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(11, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-8, 1) Fraction(2, 1)
+  Fraction(2, 1) Fraction(4, 1) Fraction(6, 1) Fraction(-2, 1)
+  Fraction(4, 1) Fraction(9, 1) Fraction(-6, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(6, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(9, 1) Fraction(3, 1) Fraction(-3, 1)
+  Fraction(5, 1) Fraction(-9, 1) Fraction(4, 1) Fraction(8, 1)
+  Fraction(-9, 1) Fraction(-7, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(14, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-8, 1) Fraction(-3, 1) Fraction(9, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(6, 1) Fraction(-10, 1) Fraction(10, 1)
+  Fraction(-8, 1) Fraction(5, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(7, 1) Fraction(5, 1) Fraction(5, 1)
+  Fraction(9, 1) Fraction(2, 1) Fraction(0, 1) Fraction(2, 1)
+  Fraction(-2, 1) Fraction(5, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-6, 1) Fraction(-9, 1) Fraction(3, 1)
+  Fraction(-4, 1) Fraction(-6, 1) Fraction(-3, 1) Fraction(-9, 1)
+  Fraction(2, 1) Fraction(0, 1) Fraction(8, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(4, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(7, 1) Fraction(-7, 1) Fraction(-10, 1) Fraction(-4, 1)
+  Fraction(8, 1) Fraction(-7, 1) Fraction(-6, 1) Fraction(-5, 1)
+  Fraction(-3, 1) Fraction(1, 1) Fraction(10, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(12, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(2, 1) Fraction(1, 1) Fraction(-4, 1) Fraction(2, 1)
+  Fraction(7, 1) Fraction(-9, 1) Fraction(9, 1) Fraction(2, 1)
+  Fraction(-7, 1) Fraction(3, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(4, 1)]]
 ###################################################################
 ###################################################################
 >> Starting Primal Simplex
 ###################################################################
-[-1, 13, 14, 15, 16, 17, 18]
->>>> Searching for element to pivotate
->>>>>> The element chosen is 1 at the position (3, 2)
->>>> Pivotating element at position (3, 2)
->>>>>> DONE.
->>>> Tableau after the pivotation: 
-###################################################################
-[[Fraction(-1, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(-1, 1)
-  Fraction(-1, 1) Fraction(1, 1) Fraction(197, 1) Fraction(1, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(-1, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-75741, 1)]
- [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
- [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
-  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
-###################################################################
->>>> Searching for element to pivotate
->>>>>> The element chosen is 1 at the position (4, 3)
->>>> Pivotating element at position (4, 3)
->>>>>> DONE.
->>>> Tableau after the pivotation: 
-###################################################################
-[[Fraction(-1, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-1, 1) Fraction(1, 1) Fraction(107, 1) Fraction(1, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-62272, 1)]
- [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
- [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
-  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
-###################################################################
->>>> Searching for element to pivotate
+>>>> Searching for element to pivotate...
 >>>>>> The element chosen is 1 at the position (5, 4)
 >>>> Pivotating element at position (5, 4)
 >>>>>> DONE.
 >>>> Tableau after the pivotation: 
 ###################################################################
-[[Fraction(-1, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(-157, 1) Fraction(1, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(1, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-22923, 1)]
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(-1, 1)
+  Fraction(-4, 1) Fraction(-4, 1) Fraction(12, 1) Fraction(-7, 1)
+  Fraction(-19, 1) Fraction(25, 1) Fraction(-6, 1) Fraction(-14, 1)
+  Fraction(21, 1) Fraction(-2, 1) Fraction(-10, 1) Fraction(-1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(1, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-61, 1)]
  [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
+  Fraction(0, 1) Fraction(10, 1) Fraction(7, 1) Fraction(7, 1)
+  Fraction(0, 1) Fraction(-4, 1) Fraction(6, 1) Fraction(10, 1)
+  Fraction(0, 1) Fraction(-9, 1) Fraction(-8, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(11, 1)]
  [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-8, 1) Fraction(2, 1)
+  Fraction(2, 1) Fraction(4, 1) Fraction(6, 1) Fraction(-2, 1)
+  Fraction(4, 1) Fraction(9, 1) Fraction(-6, 1) Fraction(0, 1)
   Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(6, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(9, 1) Fraction(3, 1) Fraction(-3, 1)
+  Fraction(5, 1) Fraction(-9, 1) Fraction(4, 1) Fraction(8, 1)
+  Fraction(-9, 1) Fraction(-7, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
   Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(14, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-8, 1) Fraction(-3, 1) Fraction(9, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(6, 1) Fraction(-10, 1) Fraction(10, 1)
+  Fraction(-8, 1) Fraction(5, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(7, 1) Fraction(5, 1) Fraction(5, 1)
+  Fraction(9, 1) Fraction(2, 1) Fraction(0, 1) Fraction(2, 1)
+  Fraction(-2, 1) Fraction(5, 1) Fraction(7, 1) Fraction(0, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-6, 1) Fraction(-9, 1) Fraction(3, 1)
+  Fraction(-4, 1) Fraction(-6, 1) Fraction(-3, 1) Fraction(-9, 1)
+  Fraction(2, 1) Fraction(0, 1) Fraction(8, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(4, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(7, 1) Fraction(-7, 1) Fraction(-10, 1) Fraction(-4, 1)
+  Fraction(8, 1) Fraction(-7, 1) Fraction(-6, 1) Fraction(-5, 1)
+  Fraction(-3, 1) Fraction(1, 1) Fraction(10, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(12, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(2, 1) Fraction(1, 1) Fraction(-4, 1) Fraction(2, 1)
+  Fraction(7, 1) Fraction(-9, 1) Fraction(9, 1) Fraction(2, 1)
+  Fraction(-7, 1) Fraction(3, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(4, 1)]]
 ###################################################################
->>>> Searching for element to pivotate
->>>>>> The element chosen is 22 at the position (1, 6)
->>>> Pivotating element at position (1, 6)
+>>>> Searching for element to pivotate...
+>>>>>> The element chosen is 1 at the position (6, 5)
+>>>> Pivotating element at position (6, 5)
 >>>>>> DONE.
 >>>> Tableau after the pivotation: 
 ###################################################################
-[[Fraction(135, 22) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-135, 22)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(157, 22) Fraction(0, 1) Fraction(1, 1)
-  Fraction(1, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-786, 1)]
- [Fraction(1, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-1, 22)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 22) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(141, 1)]
- [Fraction(-36, 11) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(36, 11)
-  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-36, 11) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(497, 1)]
- [Fraction(157, 22) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-157, 22)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(157, 22) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(45774, 1)]
- [Fraction(45, 11) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-45, 11)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(45, 11) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(26159, 1)]
- [Fraction(12, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-12, 1)
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-1, 1)
+  Fraction(-4, 1) Fraction(-10, 1) Fraction(3, 1) Fraction(-4, 1)
+  Fraction(-23, 1) Fraction(19, 1) Fraction(-9, 1) Fraction(-23, 1)
+  Fraction(23, 1) Fraction(-2, 1) Fraction(-2, 1) Fraction(-1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(-1, 1) Fraction(0, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(12, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(76573, 1)]
- [Fraction(-63, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(63, 22)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-57, 1)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-1, 1) Fraction(-63, 22) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(289, 1)]]
+  Fraction(0, 1) Fraction(10, 1) Fraction(7, 1) Fraction(7, 1)
+  Fraction(0, 1) Fraction(-4, 1) Fraction(6, 1) Fraction(10, 1)
+  Fraction(0, 1) Fraction(-9, 1) Fraction(-8, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(11, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-8, 1) Fraction(2, 1)
+  Fraction(2, 1) Fraction(4, 1) Fraction(6, 1) Fraction(-2, 1)
+  Fraction(4, 1) Fraction(9, 1) Fraction(-6, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(6, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(9, 1) Fraction(3, 1) Fraction(-3, 1)
+  Fraction(5, 1) Fraction(-9, 1) Fraction(4, 1) Fraction(8, 1)
+  Fraction(-9, 1) Fraction(-7, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(14, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-8, 1) Fraction(-3, 1) Fraction(9, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(6, 1) Fraction(-10, 1) Fraction(10, 1)
+  Fraction(-8, 1) Fraction(5, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(7, 1) Fraction(5, 1) Fraction(5, 1)
+  Fraction(9, 1) Fraction(2, 1) Fraction(0, 1) Fraction(2, 1)
+  Fraction(-2, 1) Fraction(5, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-6, 1) Fraction(-9, 1) Fraction(3, 1)
+  Fraction(-4, 1) Fraction(-6, 1) Fraction(-3, 1) Fraction(-9, 1)
+  Fraction(2, 1) Fraction(0, 1) Fraction(8, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(4, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(7, 1) Fraction(-7, 1) Fraction(-10, 1) Fraction(-4, 1)
+  Fraction(8, 1) Fraction(-7, 1) Fraction(-6, 1) Fraction(-5, 1)
+  Fraction(-3, 1) Fraction(1, 1) Fraction(10, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(12, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(2, 1) Fraction(1, 1) Fraction(-4, 1) Fraction(2, 1)
+  Fraction(7, 1) Fraction(-9, 1) Fraction(9, 1) Fraction(2, 1)
+  Fraction(-7, 1) Fraction(3, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(4, 1)]]
 ###################################################################
->>>> Searching for element to pivotate
->>>>>> The element chosen is 63/22 at the position (6, 7)
->>>> Pivotating element at position (6, 7)
+>>>> Searching for element to pivotate...
+>>>>>> The element chosen is 1 at the position (8, 7)
+>>>> Pivotating element at position (8, 7)
 >>>>>> DONE.
 >>>> Tableau after the pivotation: 
 ###################################################################
-[[Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-8, 7) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-8, 7) Fraction(1, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(1, 1) Fraction(1, 1) Fraction(15, 7) Fraction(-1167, 7)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-1, 63) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-1, 63) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 63) Fraction(9172, 63)]
- [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(8, 7) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(8, 7) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-8, 7) Fraction(1167, 7)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-157, 63) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-157, 63) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(157, 63) Fraction(2929135, 63)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(-10, 7) Fraction(0, 1) Fraction(0, 1)
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(1, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(-2, 1) Fraction(-9, 1) Fraction(-1, 1) Fraction(-2, 1)
+  Fraction(-16, 1) Fraction(10, 1) Fraction(0, 1) Fraction(-21, 1)
+  Fraction(16, 1) Fraction(1, 1) Fraction(5, 1) Fraction(-1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-53, 1)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(10, 1) Fraction(7, 1) Fraction(7, 1)
+  Fraction(0, 1) Fraction(-4, 1) Fraction(6, 1) Fraction(10, 1)
+  Fraction(0, 1) Fraction(-9, 1) Fraction(-8, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(11, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-8, 1) Fraction(2, 1)
+  Fraction(2, 1) Fraction(4, 1) Fraction(6, 1) Fraction(-2, 1)
+  Fraction(4, 1) Fraction(9, 1) Fraction(-6, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(6, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(9, 1) Fraction(3, 1) Fraction(-3, 1)
+  Fraction(5, 1) Fraction(-9, 1) Fraction(4, 1) Fraction(8, 1)
+  Fraction(-9, 1) Fraction(-7, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(14, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-8, 1) Fraction(-3, 1) Fraction(9, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(6, 1) Fraction(-10, 1) Fraction(10, 1)
+  Fraction(-8, 1) Fraction(5, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(7, 1) Fraction(5, 1) Fraction(5, 1)
+  Fraction(9, 1) Fraction(2, 1) Fraction(0, 1) Fraction(2, 1)
+  Fraction(-2, 1) Fraction(5, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-6, 1) Fraction(-9, 1) Fraction(3, 1)
+  Fraction(-4, 1) Fraction(-6, 1) Fraction(-3, 1) Fraction(-9, 1)
+  Fraction(2, 1) Fraction(0, 1) Fraction(8, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(4, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(7, 1) Fraction(-7, 1) Fraction(-10, 1) Fraction(-4, 1)
+  Fraction(8, 1) Fraction(-7, 1) Fraction(-6, 1) Fraction(-5, 1)
+  Fraction(-3, 1) Fraction(1, 1) Fraction(10, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(12, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(2, 1) Fraction(1, 1) Fraction(-4, 1) Fraction(2, 1)
+  Fraction(7, 1) Fraction(-9, 1) Fraction(9, 1) Fraction(2, 1)
+  Fraction(-7, 1) Fraction(3, 1) Fraction(7, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(4, 1)]]
+###################################################################
+>>>> Searching for element to pivotate...
+>>>>>> The element chosen is 3 at the position (5, 8)
+>>>> Pivotating element at position (5, 8)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(2, 3) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-13, 3) Fraction(7, 3) Fraction(4, 3)
+  Fraction(-10, 1) Fraction(34, 3) Fraction(0, 1) Fraction(-59, 3)
+  Fraction(44, 3) Fraction(13, 3) Fraction(29, 3) Fraction(-1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(2, 3)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(5, 3)
+  Fraction(1, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-157, 3)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(10, 1) Fraction(7, 1) Fraction(7, 1)
+  Fraction(0, 1) Fraction(-4, 1) Fraction(6, 1) Fraction(10, 1)
+  Fraction(0, 1) Fraction(-9, 1) Fraction(-8, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(11, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-8, 1) Fraction(2, 1)
+  Fraction(2, 1) Fraction(4, 1) Fraction(6, 1) Fraction(-2, 1)
+  Fraction(4, 1) Fraction(9, 1) Fraction(-6, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(6, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(2, 1) Fraction(-2, 1) Fraction(-8, 1)
+  Fraction(-4, 1) Fraction(-11, 1) Fraction(4, 1) Fraction(6, 1)
+  Fraction(-7, 1) Fraction(-12, 1) Fraction(-8, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(8, 3) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(47, 3) Fraction(67, 3) Fraction(40, 3)
+  Fraction(25, 1) Fraction(34, 3) Fraction(-10, 1) Fraction(46, 3)
+  Fraction(-40, 3) Fraction(55, 3) Fraction(56, 3) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(8, 3)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(8, 3)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(38, 3)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 3) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(7, 3) Fraction(5, 3) Fraction(5, 3)
+  Fraction(3, 1) Fraction(2, 3) Fraction(0, 1) Fraction(2, 3)
+  Fraction(-2, 3) Fraction(5, 3) Fraction(7, 3) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 3)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 3)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 3)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-6, 1) Fraction(-9, 1) Fraction(3, 1)
+  Fraction(-4, 1) Fraction(-6, 1) Fraction(-3, 1) Fraction(-9, 1)
+  Fraction(2, 1) Fraction(0, 1) Fraction(8, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(4, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-7, 3) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-70, 3) Fraction(-65, 3) Fraction(-47, 3)
+  Fraction(-13, 1) Fraction(-35, 3) Fraction(-6, 1) Fraction(-29, 3)
+  Fraction(5, 3) Fraction(-32, 3) Fraction(-19, 3) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-7, 3)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-7, 3)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(29, 3)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-2, 3) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(-11, 3) Fraction(-22, 3) Fraction(-4, 3)
+  Fraction(1, 1) Fraction(-31, 3) Fraction(9, 1) Fraction(2, 3)
+  Fraction(-17, 3) Fraction(-1, 3) Fraction(7, 3) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-2, 3)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-2, 3)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(10, 3)]]
+###################################################################
+>>>> Searching for element to pivotate...
+>>>>>> The element chosen is 7/3 at the position (5, 9)
+>>>> Pivotating element at position (5, 9)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(9, 7) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(13, 7) Fraction(0, 1) Fraction(38, 7) Fraction(31, 7)
+  Fraction(-31, 7) Fraction(88, 7) Fraction(0, 1) Fraction(-129, 7)
+  Fraction(94, 7) Fraction(52, 7) Fraction(14, 1) Fraction(-1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(9, 7)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(16, 7)
+  Fraction(1, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-362, 7)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
   Fraction(-10, 7) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(10, 7) Fraction(186003, 7)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(-88, 21) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-30, 7) Fraction(0, 1) Fraction(-1, 7) Fraction(-1, 7)
+  Fraction(-90, 7) Fraction(-48, 7) Fraction(6, 1) Fraction(50, 7)
+  Fraction(20, 7) Fraction(-113, 7) Fraction(-18, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-10, 7)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(-88, 21) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(88, 21) Fraction(1633465, 21)]
- [Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-22, 63) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-22, 63) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(22, 63) Fraction(6358, 63)]]
-###################################################################
->>>> Searching for element to pivotate
->>>>>> The element chosen is 8/7 at the position (2, 5)
->>>> Pivotating element at position (2, 5)
->>>>>> DONE.
->>>> Tableau after the pivotation: 
-###################################################################
-[[Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(1, 1) Fraction(1, 1)
-  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(0, 1)]
- [Fraction(0, 1) Fraction(1, 72) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(-1, 72) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 72) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 72)]
- [Fraction(0, 1) Fraction(7, 8) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-7, 8) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(7, 8) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(1167, 8)]
- [Fraction(0, 1) Fraction(157, 72) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-157, 72) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(157, 72) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3373757, 72)]
- [Fraction(0, 1) Fraction(5, 4) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-5, 4) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(5, 4) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(107121, 4)]
- [Fraction(0, 1) Fraction(11, 3) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-11, 3) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(11, 3) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(235186, 3)]
- [Fraction(-1, 1) Fraction(11, 36) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(-11, 36) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-1, 1) Fraction(11, 36) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(5467, 36)]]
-###################################################################
->>>> There is no entry in c to optimize. Simplex is over.
-###################################################################
->> Maximum objective value: 0
->> Optimality certificate: [[Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(1, 1) Fraction(1, 1)
-  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(0, 1)]]
-###################################################################
->>>> Pivotating element at position (1, 6)
->>>>>> DONE.
->>>> Tableau after the pivotation: 
-###################################################################
-[[Fraction(-199, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-199, 22)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(28059, 1)]
- [Fraction(-1, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-1, 22)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(141, 1)]
- [Fraction(-36, 11) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-36, 11)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-497, 1)]
- [Fraction(-157, 22) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-157, 22)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(45774, 1)]
- [Fraction(-45, 11) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-45, 11)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(26159, 1)]
- [Fraction(-12, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-12, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(76573, 1)]
- [Fraction(-63, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-63, 22)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(-289, 1)]]
-###################################################################
->>>> Pivotating element at position (2, 5)
->>>> Pivotating element at position (3, 2)
->>>>>> DONE.
->>>> Tableau after the pivotation: 
-###################################################################
-[[Fraction(-199, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-199, 22)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(28059, 1)]
- [Fraction(-1, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-1, 22)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(141, 1)]
- [Fraction(-36, 11) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-36, 11)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-497, 1)]
- [Fraction(-157, 22) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-157, 22)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(45774, 1)]
- [Fraction(-45, 11) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-45, 11)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(26159, 1)]
- [Fraction(-12, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-12, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(76573, 1)]
- [Fraction(-63, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-63, 22)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(-289, 1)]]
-###################################################################
->>>> Pivotating element at position (4, 3)
->>>>>> DONE.
->>>> Tableau after the pivotation: 
-###################################################################
-[[Fraction(-199, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-199, 22)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(28059, 1)]
- [Fraction(-1, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-1, 22)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(141, 1)]
- [Fraction(-36, 11) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-36, 11)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-497, 1)]
- [Fraction(-157, 22) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-157, 22)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(45774, 1)]
- [Fraction(-45, 11) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-45, 11)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(26159, 1)]
- [Fraction(-12, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-12, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(76573, 1)]
- [Fraction(-63, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-63, 22)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(-289, 1)]]
-###################################################################
->>>> Pivotating element at position (5, 4)
->>>>>> DONE.
->>>> Tableau after the pivotation: 
-###################################################################
-[[Fraction(-199, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-199, 22)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(28059, 1)]
- [Fraction(-1, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-1, 22)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(141, 1)]
- [Fraction(-36, 11) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-36, 11)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-497, 1)]
- [Fraction(-157, 22) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-157, 22)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(45774, 1)]
- [Fraction(-45, 11) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-45, 11)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(26159, 1)]
- [Fraction(-12, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-12, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(76573, 1)]
- [Fraction(-63, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-63, 22)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(-289, 1)]]
-###################################################################
->>>> Pivotating element at position (6, 7)
->>>>>> DONE.
->>>> Tableau after the pivotation: 
-###################################################################
-[[Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-199, 63) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-199, 63) Fraction(1825228, 63)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-1, 63) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-1, 63) Fraction(9172, 63)]
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-10, 7)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(67, 7)]
  [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-8, 7) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-8, 7) Fraction(-1167, 7)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-157, 63) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-157, 63) Fraction(2929135, 63)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(0, 1) Fraction(-10, 7) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
-  Fraction(-10, 7) Fraction(186003, 7)]
- [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(1, 1) Fraction(-88, 21) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
-  Fraction(-88, 21) Fraction(1633465, 21)]
- [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(0, 1) Fraction(-22, 63) Fraction(0, 1) Fraction(1, 1)
   Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
-  Fraction(-22, 63) Fraction(6358, 63)]]
+  Fraction(0, 1) Fraction(0, 1) Fraction(-8, 1) Fraction(2, 1)
+  Fraction(2, 1) Fraction(4, 1) Fraction(6, 1) Fraction(-2, 1)
+  Fraction(4, 1) Fraction(9, 1) Fraction(-6, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(6, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(-9, 7) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-6, 7) Fraction(0, 1) Fraction(-24, 7) Fraction(-66, 7)
+  Fraction(-46, 7) Fraction(-81, 7) Fraction(4, 1) Fraction(38, 7)
+  Fraction(-45, 7) Fraction(-94, 7) Fraction(-10, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(-9, 7)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-9, 7)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(89, 7)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(3, 7) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-47, 7) Fraction(0, 1) Fraction(78, 7) Fraction(15, 7)
+  Fraction(34, 7) Fraction(48, 7) Fraction(-10, 1) Fraction(76, 7)
+  Fraction(-62, 7) Fraction(50, 7) Fraction(3, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(3, 7)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(3, 7)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(73, 7)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 7) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 7) Fraction(1, 1) Fraction(5, 7) Fraction(5, 7)
+  Fraction(9, 7) Fraction(2, 7) Fraction(0, 1) Fraction(2, 7)
+  Fraction(-2, 7) Fraction(5, 7) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 7)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 7)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 7)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(6, 7) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(18, 7) Fraction(0, 1) Fraction(-33, 7) Fraction(51, 7)
+  Fraction(26, 7) Fraction(-30, 7) Fraction(-3, 1) Fraction(-51, 7)
+  Fraction(2, 7) Fraction(30, 7) Fraction(14, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(6, 7)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(6, 7)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(34, 7)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(10, 1) Fraction(0, 1) Fraction(-5, 1) Fraction(1, 1)
+  Fraction(17, 1) Fraction(-5, 1) Fraction(-6, 1) Fraction(-3, 1)
+  Fraction(-5, 1) Fraction(6, 1) Fraction(17, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(13, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 7) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(11, 7) Fraction(0, 1) Fraction(-33, 7) Fraction(9, 7)
+  Fraction(40, 7) Fraction(-65, 7) Fraction(9, 1) Fraction(12, 7)
+  Fraction(-47, 7) Fraction(16, 7) Fraction(6, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 7)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 7)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(27, 7)]]
 ###################################################################
+>>>> Searching for element to pivotate...
+>>>>>> The element chosen is 9/7 at the position (5, 12)
+>>>> Pivotating element at position (5, 12)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
 ###################################################################
->> Starting Primal Simplex
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(16, 9) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(10, 3) Fraction(31, 9) Fraction(71, 9) Fraction(62, 9)
+  Fraction(0, 1) Fraction(122, 9) Fraction(0, 1) Fraction(-157, 9)
+  Fraction(112, 9) Fraction(89, 9) Fraction(157, 9) Fraction(-1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(16, 9)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(25, 9)
+  Fraction(1, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-461, 9)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(10, 1) Fraction(7, 1) Fraction(7, 1)
+  Fraction(0, 1) Fraction(-4, 1) Fraction(6, 1) Fraction(10, 1)
+  Fraction(0, 1) Fraction(-9, 1) Fraction(-8, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(11, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-2, 9) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-2, 3) Fraction(-14, 9) Fraction(-82, 9) Fraction(8, 9)
+  Fraction(0, 1) Fraction(32, 9) Fraction(6, 1) Fraction(-22, 9)
+  Fraction(40, 9) Fraction(71, 9) Fraction(-68, 9) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-2, 9)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-2, 9)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(52, 9)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(-5, 9) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(4, 3) Fraction(46, 9) Fraction(2, 9) Fraction(-52, 9)
+  Fraction(0, 1) Fraction(-91, 9) Fraction(4, 1) Fraction(62, 9)
+  Fraction(-71, 9) Fraction(-88, 9) Fraction(-44, 9) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(-5, 9)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-5, 9)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(121, 9)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(-1, 9) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-25, 3) Fraction(-34, 9) Fraction(76, 9) Fraction(-5, 9)
+  Fraction(0, 1) Fraction(52, 9) Fraction(-10, 1) Fraction(88, 9)
+  Fraction(-70, 9) Fraction(40, 9) Fraction(-7, 9) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(-1, 9)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-1, 9)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(89, 9)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 9) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 3) Fraction(7, 9) Fraction(5, 9) Fraction(5, 9)
+  Fraction(1, 1) Fraction(2, 9) Fraction(0, 1) Fraction(2, 9)
+  Fraction(-2, 9) Fraction(5, 9) Fraction(7, 9) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 9)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 9)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 9)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(4, 9) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(4, 3) Fraction(-26, 9) Fraction(-61, 9) Fraction(47, 9)
+  Fraction(0, 1) Fraction(-46, 9) Fraction(-3, 1) Fraction(-73, 9)
+  Fraction(10, 9) Fraction(20, 9) Fraction(100, 9) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(4, 9)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(4, 9)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(40, 9)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-8, 9) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(13, 3) Fraction(-119, 9) Fraction(-130, 9) Fraction(-76, 9)
+  Fraction(0, 1) Fraction(-79, 9) Fraction(-6, 1) Fraction(-61, 9)
+  Fraction(-11, 9) Fraction(-31, 9) Fraction(34, 9) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-8, 9)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-8, 9)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(100, 9)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-7, 9) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(-1, 3) Fraction(-40, 9) Fraction(-71, 9) Fraction(-17, 9)
+  Fraction(0, 1) Fraction(-95, 9) Fraction(9, 1) Fraction(4, 9)
+  Fraction(-49, 9) Fraction(-8, 9) Fraction(14, 9) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-7, 9)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-7, 9)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(29, 9)]]
 ###################################################################
-[-1, 7, 8, 9, 10, 11, 12]
->>>> Searching for element to pivotate
->>>> There is no more elements to pivotate.
->>>> The LP is unbounded! <<<<
+>>>> Searching for element to pivotate...
+>>>>>> The element chosen is 2/9 at the position (5, 15)
+>>>> Pivotating element at position (5, 15)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(21, 2) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(59, 2) Fraction(129, 2) Fraction(103, 2) Fraction(101, 2)
+  Fraction(157, 2) Fraction(31, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-5, 1) Fraction(107, 2) Fraction(157, 2) Fraction(-1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(21, 2)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23, 2)
+  Fraction(1, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-85, 2)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-5, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-15, 1) Fraction(-25, 1) Fraction(-18, 1) Fraction(-18, 1)
+  Fraction(-45, 1) Fraction(-14, 1) Fraction(6, 1) Fraction(0, 1)
+  Fraction(10, 1) Fraction(-34, 1) Fraction(-43, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-5, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-5, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(6, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(7, 1) Fraction(-3, 1) Fraction(7, 1)
+  Fraction(11, 1) Fraction(6, 1) Fraction(6, 1) Fraction(0, 1)
+  Fraction(2, 1) Fraction(14, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(7, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(-4, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-9, 1) Fraction(-19, 1) Fraction(-17, 1) Fraction(-23, 1)
+  Fraction(-31, 1) Fraction(-17, 1) Fraction(4, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(-27, 1) Fraction(-29, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(-4, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-4, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(-5, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-23, 1) Fraction(-38, 1) Fraction(-16, 1) Fraction(-25, 1)
+  Fraction(-44, 1) Fraction(-4, 1) Fraction(-10, 1) Fraction(0, 1)
+  Fraction(2, 1) Fraction(-20, 1) Fraction(-35, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(-5, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-5, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(5, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 2) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 2) Fraction(7, 2) Fraction(5, 2) Fraction(5, 2)
+  Fraction(9, 2) Fraction(1, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(-1, 1) Fraction(5, 2) Fraction(7, 2) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 2)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 2)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 2)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(9, 2) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(27, 2) Fraction(51, 2) Fraction(27, 2) Fraction(51, 2)
+  Fraction(73, 2) Fraction(3, 1) Fraction(-3, 1) Fraction(0, 1)
+  Fraction(-7, 1) Fraction(45, 2) Fraction(79, 2) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(9, 2)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(9, 2)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(17, 2)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(5, 2) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(29, 2) Fraction(21, 2) Fraction(5, 2) Fraction(17, 2)
+  Fraction(61, 2) Fraction(-2, 1) Fraction(-6, 1) Fraction(0, 1)
+  Fraction(-8, 1) Fraction(27, 2) Fraction(55, 2) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(5, 2)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(5, 2)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(29, 2)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(-1, 1) Fraction(-6, 1) Fraction(-9, 1) Fraction(-3, 1)
+  Fraction(-2, 1) Fraction(-11, 1) Fraction(9, 1) Fraction(0, 1)
+  Fraction(-5, 1) Fraction(-2, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(3, 1)]]
+###################################################################
+>>>> Searching for element to pivotate...
+>>>>>> The element chosen is 10 at the position (1, 16)
+>>>> Pivotating element at position (1, 16)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 2) Fraction(-1, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(8, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(22, 1) Fraction(52, 1) Fraction(85, 2) Fraction(83, 2)
+  Fraction(56, 1) Fraction(24, 1) Fraction(3, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(73, 2) Fraction(57, 1) Fraction(-1, 2)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(8, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(1, 2)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(9, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-79, 2)]
+ [Fraction(1, 10) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 2) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-3, 2) Fraction(-5, 2) Fraction(-9, 5) Fraction(-9, 5)
+  Fraction(-9, 2) Fraction(-7, 5) Fraction(3, 5) Fraction(0, 1)
+  Fraction(1, 1) Fraction(-17, 5) Fraction(-43, 10) Fraction(1, 10)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 2)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 10)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 2)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3, 5)]
+ [Fraction(-1, 5) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(2, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(6, 1) Fraction(12, 1) Fraction(3, 5) Fraction(53, 5)
+  Fraction(20, 1) Fraction(44, 5) Fraction(24, 5) Fraction(0, 1)
+  Fraction(0, 1) Fraction(104, 5) Fraction(48, 5) Fraction(-1, 5)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(2, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 5)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(2, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(29, 5)]
+ [Fraction(1, 10) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(-9, 2) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-21, 2) Fraction(-43, 2) Fraction(-94, 5) Fraction(-124, 5)
+  Fraction(-71, 2) Fraction(-92, 5) Fraction(23, 5) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-152, 5) Fraction(-333, 10) Fraction(1, 10)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(-9, 2)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 10)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-9, 2)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(53, 5)]
+ [Fraction(-1, 5) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(-4, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-20, 1) Fraction(-33, 1) Fraction(-62, 5) Fraction(-107, 5)
+  Fraction(-35, 1) Fraction(-6, 5) Fraction(-56, 5) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-66, 5) Fraction(-132, 5) Fraction(-1, 5)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(-4, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 5)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-4, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(19, 5)]
+ [Fraction(1, 10) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(7, 10) Fraction(7, 10)
+  Fraction(0, 1) Fraction(-2, 5) Fraction(3, 5) Fraction(1, 1)
+  Fraction(0, 1) Fraction(-9, 10) Fraction(-4, 5) Fraction(1, 10)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 10)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(11, 10)]
+ [Fraction(7, 10) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(8, 1) Fraction(9, 10) Fraction(129, 10)
+  Fraction(5, 1) Fraction(-34, 5) Fraction(6, 5) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-13, 10) Fraction(47, 5) Fraction(7, 10)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(7, 10)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(127, 10)]
+ [Fraction(4, 5) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-3, 2) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(5, 2) Fraction(-19, 2) Fraction(-119, 10) Fraction(-59, 10)
+  Fraction(-11, 2) Fraction(-66, 5) Fraction(-6, 5) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-137, 10) Fraction(-69, 10) Fraction(4, 5)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-3, 2)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(4, 5)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-3, 2)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(193, 10)]
+ [Fraction(1, 2) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-7, 2) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(-17, 2) Fraction(-37, 2) Fraction(-18, 1) Fraction(-12, 1)
+  Fraction(-49, 2) Fraction(-18, 1) Fraction(12, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-19, 1) Fraction(-43, 2) Fraction(1, 2)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-7, 2)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(1, 2)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-7, 2)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(6, 1)]]
+###################################################################
+>>>> Searching for element to pivotate...
+>>>>>> The element chosen is 1/10 at the position (1, 19)
+>>>> Pivotating element at position (1, 19)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(0, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(11, 2) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(29, 2) Fraction(79, 2) Fraction(67, 2) Fraction(65, 2)
+  Fraction(67, 2) Fraction(17, 1) Fraction(6, 1) Fraction(0, 1)
+  Fraction(5, 1) Fraction(39, 2) Fraction(71, 2) Fraction(0, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(11, 2)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13, 2)
+  Fraction(1, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-73, 2)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-5, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-15, 1) Fraction(-25, 1) Fraction(-18, 1) Fraction(-18, 1)
+  Fraction(-45, 1) Fraction(-14, 1) Fraction(6, 1) Fraction(0, 1)
+  Fraction(10, 1) Fraction(-34, 1) Fraction(-43, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-5, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-5, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(6, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 1) Fraction(7, 1) Fraction(-3, 1) Fraction(7, 1)
+  Fraction(11, 1) Fraction(6, 1) Fraction(6, 1) Fraction(0, 1)
+  Fraction(2, 1) Fraction(14, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(7, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(-4, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-9, 1) Fraction(-19, 1) Fraction(-17, 1) Fraction(-23, 1)
+  Fraction(-31, 1) Fraction(-17, 1) Fraction(4, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(-27, 1) Fraction(-29, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(-4, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-4, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(-5, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-23, 1) Fraction(-38, 1) Fraction(-16, 1) Fraction(-25, 1)
+  Fraction(-44, 1) Fraction(-4, 1) Fraction(-10, 1) Fraction(0, 1)
+  Fraction(2, 1) Fraction(-20, 1) Fraction(-35, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(-5, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-5, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(5, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 2) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(3, 2) Fraction(7, 2) Fraction(5, 2) Fraction(5, 2)
+  Fraction(9, 2) Fraction(1, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(-1, 1) Fraction(5, 2) Fraction(7, 2) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 2)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 2)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 2)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(9, 2) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(27, 2) Fraction(51, 2) Fraction(27, 2) Fraction(51, 2)
+  Fraction(73, 2) Fraction(3, 1) Fraction(-3, 1) Fraction(0, 1)
+  Fraction(-7, 1) Fraction(45, 2) Fraction(79, 2) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(9, 2)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(9, 2)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(17, 2)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(5, 2) Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(29, 2) Fraction(21, 2) Fraction(5, 2) Fraction(17, 2)
+  Fraction(61, 2) Fraction(-2, 1) Fraction(-6, 1) Fraction(0, 1)
+  Fraction(-8, 1) Fraction(27, 2) Fraction(55, 2) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(5, 2)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(5, 2)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(29, 2)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(-1, 1) Fraction(-6, 1) Fraction(-9, 1) Fraction(-3, 1)
+  Fraction(-2, 1) Fraction(-11, 1) Fraction(9, 1) Fraction(0, 1)
+  Fraction(-5, 1) Fraction(-2, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(3, 1)]]
+###################################################################
+>>>> There is no entry in c to optimize. Primal Simplex is over.
+###################################################################
+>> Maximum objective value: -73/2
+>> Optimality certificate: [Fraction(0, 1) Fraction(-1, 1) Fraction(1, 1) Fraction(1, 1)
+ Fraction(11, 2) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)]
+###################################################################

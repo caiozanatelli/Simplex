@@ -57,7 +57,7 @@ class LinearProgramming:
     def make_auxiliar_lp(self, index_list_b_neg_values):
         # Multiplying lines by -1 in order to make the b array non-negative
         for i in index_list_b_neg_values:
-            for j in range(self.get_LP_init_column(), self.get_tableau_num_cols()):
+            for j in xrange(0, self.get_tableau_num_cols()):
                 elem = self.get_tableau_elem(i, j)
                 self.set_tableau_elem(i, j, elem * (-1)) 
 
@@ -157,18 +157,33 @@ class LinearProgramming:
         This certificate is obtained from the matrix that register the 
         operations over the tableau.
         """
-        return self.__tableau[0:self.__num_rows - 1]
+        return self.__tableau[0, 0:self.__tableau.shape[0] - 1]
 
 
     def get_first_neg_entry_col_in_c(self):
         """
-        Verify whether the 'c' array in the LP is in great status.
+        Verify whether the 'c' array in the LP is in optimum status.
         
         Return the first index where there is a neg entry in c.
-        Return -1 if there is no neg entrie in c.
+        Return -1 if there is none.
         """
         for i in xrange(self.__lp_init_col, self.__tableau.shape[1] - 1):
             if (self.__tableau[0, i] < 0):
+                return i
+
+        return -1
+
+
+    def get_first_neg_entry_row_in_b(self):
+        """
+        Verify whether there is at least one negative value in the 'b' array.
+        
+        Return the first index where there is a neg entry in b.
+        Return -1 if there is none.
+        """
+        b_col = self.get_tableau_num_cols() - 1
+        for i in xrange(1, self.__tableau.shape[0]):
+            if self.__tableau[i, b_col] < 0:
                 return i
 
         return -1
