@@ -30,6 +30,7 @@ class Simplex:
         # Get the neg entries in both c and b arrays from the tableau
         index_neg_entry_in_c   = self.__lp.get_first_neg_entry_col_in_c()
         index_list_b_neg_values = self.__lp.get_b_neg_entries_rows()
+        
 
         # The c array is in optimum state. Dual Simplex must be used
         if index_neg_entry_in_c < 0:
@@ -40,7 +41,20 @@ class Simplex:
             
             if not index_list_b_neg_values:
                 print(">>>> All entries in b are non-negative. No need for an auxiliar LP.")
-                self.__apply_primal_simplex() # Solve LP through Primal Simplex algorithm
+                simplex_result = self.__apply_primal_simplex() # Solve LP through Primal Simplex algorithm
+                base = simplex_result[2]
+
+                num_vars = self.__lp.get_tableau_num_cols() - 2*self.__lp.get_tableau_num_rows() + 1
+                solution = [0]*num_vars
+
+                # Getting solution from base
+                for i in xrange(1, len(base)):
+                    r = base[i]
+                    if r < self.__lp.get_tableau_num_cols() - self.__lp.get_tableau_num_rows():
+                        solution[i] = self.__lp.get_tableau_elem(i, self.__lp.get_tableau_num_cols() - 1)
+
+                print(solution)
+                
             else:
                 print(">>>> There are negative entries in b. An auxiliar LP is needed.")
                 print(">>>> Creating auxiliar LP to find a feasible basic solution to the problem")
@@ -132,7 +146,7 @@ class Simplex:
         is_lp_bounded = True
 
         feasible_base_columns = []
-        feasible_base_columns.append(-1) # There's no pivot in the c line
+        feasible_base_columns.append(-1) # There's no pivot in the c row
         # Store the initial columns that make the basic solution
         for i in range(1, num_rows):
             feasible_base_columns.append(num_cols - num_rows - 1 + i)
@@ -179,6 +193,22 @@ class Simplex:
             # Return the id for a feasible bounded solution and the base columns associated
             return (self.LP_FEASIBLE_BOUNDED, obj_value, feasible_base_columns, optimality_certificate)
         else:
+            unbounded_certificate = [0]*num_cols
+            unbounded_certificate[col] = 1
+            #for i in xrange(num_cols - num_rows + 1):
+            
+            for i in xrange(1, num_rows):
+                col_base = feasible_base_columns[i]
+                neg_column_elem = -self.__lp.get_tableau_elem(i, col)
+                unbounded_certificate[col_base] = neg_column_elem
+                #print(len(unbounded_certificate))
+
+            print(unbounded_certificate)
+            print(col)
+            #print(col)
+            #print(num_cols)
+            #print(num_rows)
+            #print(feasible_base_columns)
             return (self.LP_FEASIBLE_UNBOUNDED)
 
 
@@ -263,6 +293,7 @@ class Simplex:
 
             return self.LP_FEASIBLE_BOUNDED, obj_value, optimality_certificate
         else:
+            infeasible_certificate = []
             return self.LP_INFEASIBLE
 
 
