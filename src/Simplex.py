@@ -5,6 +5,10 @@ from IOUtils import IOUtils
 from copy import deepcopy
 
 class Simplex:
+    LP_INFEASIBLE         = 0
+    LP_FEASIBLE_UNBOUNDED = 1
+    LP_FEASIBLE_BOUNDED   = 2
+
     __lp = None
     __obj_func_c = None
     __feasible_base_solution = None
@@ -23,7 +27,6 @@ class Simplex:
 
     def solve(self):
         IOUtils.print_header_line_screen()
-
         # Get the neg entries in both c and b arrays from the tableau
         index_neg_entry_in_c   = self.__lp.get_first_neg_entry_col_in_c()
         index_list_b_neg_values = self.__lp.get_b_neg_entries_rows()
@@ -31,7 +34,6 @@ class Simplex:
         # The c array is in optimum state. Dual Simplex must be used
         if index_neg_entry_in_c < 0:
             print(">> The c array is in optimum status: Dual Simplex will be used.")
-
             self.__apply_dual_simplex()
         else:
             print(">> The c array is not in optimum status: Primal Simplex will be used.")
@@ -54,14 +56,19 @@ class Simplex:
                 for i in range(1, rows):
                     simplex_aux.__pivotate_element(i, cols - rows + i - 1)
 
-                simplex_aux.__apply_primal_simplex()
-                
+                primal_simplex_result = simplex_aux.__apply_primal_simplex()
+
+                # Primal Simplex for auxiliar LP is always feasible
+                if (primal_simplex_result[1] == 0):
+                    # Pivotate the base columns found in the auxiliar LP
+                    base_columns = primal_simplex_result[2]
+                    for i in range(1, rows):
+                        self.__pivotate_element(i, base_columns[i])
+                    
+                    self.__apply_primal_simplex()
+                    print(self.__lp.get_tableau())
+                    
                 # TODO: use the auxiliar solution to solve the original linear programming
-
-
-    def __create_auxiliar_lp(self):
-        print(">>>> Creating auxiliar linear programming tableau for finding a basic solution...")
-        print(self.__lp.get_extended_canonical_tableau())
 
 
     def __apply_primal_simplex(self):
@@ -69,7 +76,17 @@ class Simplex:
         print(">> Starting Primal Simplex")
         IOUtils.print_header_line_screen()
 
-        lp_has_unique_optimum_value = True
+        num_rows = self.__lp.get_tableau_num_rows()
+        num_cols = self.__lp.get_tableau_num_cols()
+        is_lp_bounded = True
+
+        feasible_base_columns = []
+        feasible_base_columns.append(-1) # There's no pivot in the c line
+        # Store the initial columns that make the basic solution
+        for i in range(1, num_rows):
+            feasible_base_columns.append(num_cols - num_rows - 1 + i)
+
+        print(feasible_base_columns)
 
         while True:
             # Get neg entries in the a
@@ -80,7 +97,7 @@ class Simplex:
                 print(">>>> There is no entry in c to optimize. Simplex is over.")
                 IOUtils.print_header_line_screen()
 
-                lp_has_unique_optimum_value = True
+                is_lp_bounded = True
                 break
 
             print(">>>> Searching for element to pivotate")
@@ -90,24 +107,30 @@ class Simplex:
             # There is no negative entry in the c array. The LP is then ilimited 
             if row < 0:
                 print(">>>> There is no more elements to pivotate.")
-                print(">>>> The LP is ilimited! <<<<")
+                print(">>>> The LP is unbounded! <<<<")
 
-                lp_has_unique_optimum_value = False
+                is_lp_bounded = False
                 break
-            else: # There is element to be pivotated has been chosen
+            else: # The element to be pivotated has been chosen
                 print(">>>>>> The element chosen is " + str(self.__lp.get_tableau_elem(row, col))
                                      + " at the position (" + str(row) + ", " + str(col) + ")")
 
-                # Apply Primal Simplex on the tableau
-                self.__pivotate_element(row, col)
+                self.__pivotate_element(row, col) # Pivotate the chosen element
+                feasible_base_columns[row] = col  # Update the base columns to the basic feasible solution
         
 
-        if lp_has_unique_optimum_value:    
-            print(">> Maximum objective value: " + str(self.__lp.get_objective_value()))
-            print(">> Optimality certificate: " + str(self.__lp.get_optimality_certificate()))
+        if is_lp_bounded:
+            obj_value = self.__lp.get_objective_value()
+            optimality_certificate = self.__lp.get_optimality_certificate()
+
+            print(">> Maximum objective value: " + str(obj_value))
+            print(">> Optimality certificate: " + str(optimality_certificate))
             IOUtils.print_header_line_screen()
+
+            # Return the id for a feasible bounded solution and the base columns associated
+            return (self.LP_FEASIBLE_BOUNDED, obj_value, feasible_base_columns, optimality_certificate)
         else:
-            pass
+            return (self.LP_FEASIBLE_UNBOUNDED)
 
 
     def __pivotate_element(self, row, col):
@@ -142,17 +165,6 @@ class Simplex:
                 elem_in_pivot_row = self.__lp.get_tableau_elem(row, j)
                 new_elem_value = curr_elem - sum_pivot_factor*elem_in_pivot_row
                 self.__lp.set_tableau_elem(i, j, new_elem_value)
-
-
-                #sum_pivot_factor  = self.__lp.get_tableau_elem(i, col)
-
-                #for j in xrange(tableau_num_cols):
-                #    curr_elem = self.__lp.get_tableau_elem(i, j)
-                #    elem_in_pivot_row = self.__lp.get_tableau_elem(row, j)
-
-                #    new_elem_value = curr_elem - sum_pivot_factor*elem_in_pivot_row
-                #    self.__lp.set_tableau_elem(i, j, new_elem_value)
-
 
         print(">>>>>> DONE.")
         print(">>>> Tableau after the pivotation: ")
@@ -225,6 +237,3 @@ class Simplex:
 
         # If pivot_col = -1, then there is no element to pivotate
         return pivot_row, pivot_col
-
-    def __dual_pivotation(self):
-        pass
