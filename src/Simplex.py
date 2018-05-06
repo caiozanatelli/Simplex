@@ -40,8 +40,7 @@ class Simplex:
             
             if not index_list_b_neg_values:
                 print(">>>> All entries in b are non-negative. No need for an auxiliar LP.")
-                # Solve LP through Primal Simplex algorithm
-                self.__apply_primal_simplex()
+                self.__apply_primal_simplex() # Solve LP through Primal Simplex algorithm
             else:
                 print(">>>> There are negative entries in b. An auxiliar LP is needed.")
                 print(">>>> Creating auxiliar LP to find a feasible basic solution to the problem")
@@ -66,12 +65,61 @@ class Simplex:
                         self.__pivotate_element(i, base_columns[i])
                     
                     self.__apply_primal_simplex()
-                    print(self.__lp.get_tableau())
-                    
+                    #print(self.__lp.get_tableau())
+
                 # TODO: use the auxiliar solution to solve the original linear programming
+
+    def __pivotate_element(self, row, col):
+        """
+        Pivotate the element at position (row, col) in the tableau.
+        """
+        print(">>>> Pivotating element at position (" + str(row) + ", " + str(col) + ")")
+
+        tableau_num_rows = self.__lp.get_tableau_num_rows()
+        tableau_num_cols = self.__lp.get_tableau_num_cols()
+        pivot_value = self.__lp.get_tableau_elem(row, col)
+
+        if pivot_value == 0:
+            return
+
+        # Dividing the pivot line by the pivot's value
+        if (pivot_value != 1):
+            for i in xrange(tableau_num_cols):
+                curr_elem = self.__lp.get_tableau_elem(row, i)
+                self.__lp.set_tableau_elem(row, i, curr_elem / pivot_value)
+
+            # This should result in 1
+            pivot_value = self.__lp.get_tableau_elem(row, col)
+    
+        for i in xrange(tableau_num_rows):
+            if i == row:
+                continue
+            if self.__lp.get_tableau_elem(i, col) == 0:
+                continue
+
+            sum_pivot_factor = self.__lp.get_tableau_elem(i, col)
+
+            for j in xrange(tableau_num_cols):
+                curr_elem = self.__lp.get_tableau_elem(i, j)
+                elem_in_pivot_row = self.__lp.get_tableau_elem(row, j)
+                new_elem_value = curr_elem - sum_pivot_factor*elem_in_pivot_row
+                self.__lp.set_tableau_elem(i, j, new_elem_value)
+
+        print(">>>>>> DONE.")
+        print(">>>> Tableau after the pivotation: ")
+        IOUtils.print_header_line_screen()
+        print(self.__lp.get_tableau())
+        IOUtils.print_header_line_screen()
 
 
     def __apply_primal_simplex(self):
+        """
+        Implementation of the Primal Simplex algorithm.
+
+        Return whether the LP is feasible and bounded, feasible and unbounded, or
+        infeasible. The certificates, the objective values as well as the feasible
+        base columns are returned in a tuple, when applicable.
+        """
         IOUtils.print_header_line_screen()
         print(">> Starting Primal Simplex")
         IOUtils.print_header_line_screen()
@@ -133,46 +181,6 @@ class Simplex:
             return (self.LP_FEASIBLE_UNBOUNDED)
 
 
-    def __pivotate_element(self, row, col):
-        """
-        Pivotate the element at position (row, col) in the tableau.
-        """
-        print(">>>> Pivotating element at position (" + str(row) + ", " + str(col) + ")")
-
-        tableau_num_rows = self.__lp.get_tableau_num_rows()
-        tableau_num_cols = self.__lp.get_tableau_num_cols()
-        pivot_value = self.__lp.get_tableau_elem(row, col)
-
-        # Dividing the pivot line by the pivot's value
-        if (pivot_value != 1):
-            for i in xrange(tableau_num_cols):
-                curr_elem = self.__lp.get_tableau_elem(row, i)
-                self.__lp.set_tableau_elem(row, i, curr_elem / pivot_value)
-
-            # This should result in 1
-            pivot_value = self.__lp.get_tableau_elem(row, col)
-    
-        for i in xrange(tableau_num_rows):
-            if i == row:
-                continue
-            if self.__lp.get_tableau_elem(i, col) == 0:
-                continue
-
-            sum_pivot_factor = self.__lp.get_tableau_elem(i, col)
-
-            for j in xrange(tableau_num_cols):
-                curr_elem = self.__lp.get_tableau_elem(i, j)
-                elem_in_pivot_row = self.__lp.get_tableau_elem(row, j)
-                new_elem_value = curr_elem - sum_pivot_factor*elem_in_pivot_row
-                self.__lp.set_tableau_elem(i, j, new_elem_value)
-
-        print(">>>>>> DONE.")
-        print(">>>> Tableau after the pivotation: ")
-        IOUtils.print_header_line_screen()
-        print(self.__lp.get_tableau())
-        IOUtils.print_header_line_screen()
-
-
     def __get_primal_pivot_element(self, neg_entry_index):
         """
         Select the element for Primal Simplex pivotation by choosing the one with minimum ratio.
@@ -183,16 +191,17 @@ class Simplex:
         pivot_col = neg_entry_index
         pivot_row = -1
         min_ratio = Fraction(-1)
-
-        c_entry_value = abs(self.__lp.get_tableau_elem(0, pivot_col))
+        rows = self.__lp.get_tableau_num_rows()
+        cols = self.__lp.get_tableau_num_cols()
 
         # Find the element with min ratio in the column pivot_col in matrix A for pivotating
-        for i in xrange(self.__lp.get_tableau().shape[0] - 1):
+        for i in xrange(rows - 1):
+            b_entry_value = self.__lp.get_tableau_elem(i + 1, cols -1)
             tableau_candidate_pivot = self.__lp.get_tableau_elem(i + 1, pivot_col)
 
             # Check if the current element can be a candidate for pivot
             if tableau_candidate_pivot > 0:
-                curr_ratio = c_entry_value / tableau_candidate_pivot
+                curr_ratio = b_entry_value / tableau_candidate_pivot
 
                 # Check if we found an element with a better ratio
                 if min_ratio < 0 or curr_ratio < min_ratio:

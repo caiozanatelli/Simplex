@@ -1,0 +1,695 @@
+Number of lines:   6
+Number of columns: 1
+###################################################################
+>> Starting Simplex...
+###################################################################
+>>>> Creating tableau for the linear programming...
+>>>>>> DONE.
+>>>> Setting Tableau elements as fractions...
+>>>>>> DONE.
+>>>> Generating extended canonical tableau...
+>>>>>> DONE.
+###################################################################
+>> The c array is not in optimum status: Primal Simplex will be used.
+>>>> There are negative entries in b. An auxiliar LP is needed.
+>>>> Creating auxiliar LP to find a feasible basic solution to the problem
+>>>> Generating extended canonical tableau...
+>>>>>> DONE.
+>>>> Pivotating element at position (1, 13)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-22, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-3102, 1)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
+###################################################################
+>>>> Pivotating element at position (2, 14)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-94, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-13751, 1)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
+###################################################################
+>>>> Pivotating element at position (3, 15)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(63, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-37388, 1)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
+###################################################################
+>>>> Pivotating element at position (4, 16)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(153, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(-1, 1) Fraction(-1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(1, 1) Fraction(-50857, 1)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
+###################################################################
+>>>> Pivotating element at position (5, 17)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(417, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-90206, 1)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
+###################################################################
+>>>> Pivotating element at position (6, 18)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1)
+  Fraction(-1, 1) Fraction(1, 1) Fraction(354, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(-1, 1) Fraction(-1, 1) Fraction(-1, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-99378, 1)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
+###################################################################
+###################################################################
+>> Starting Primal Simplex
+###################################################################
+[-1, 13, 14, 15, 16, 17, 18]
+>>>> Searching for element to pivotate
+>>>>>> The element chosen is 1 at the position (3, 2)
+>>>> Pivotating element at position (3, 2)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(-1, 1) Fraction(1, 1) Fraction(197, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(-1, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-75741, 1)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
+###################################################################
+>>>> Searching for element to pivotate
+>>>>>> The element chosen is 1 at the position (4, 3)
+>>>> Pivotating element at position (4, 3)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(1, 1) Fraction(107, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-62272, 1)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
+###################################################################
+>>>> Searching for element to pivotate
+>>>>>> The element chosen is 1 at the position (5, 4)
+>>>> Pivotating element at position (5, 4)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-1, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(-157, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-22923, 1)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(22, 1) Fraction(-1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3102, 1)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(72, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-157, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(23637, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-90, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(13469, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(-264, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(39349, 1)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(63, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(9172, 1)]]
+###################################################################
+>>>> Searching for element to pivotate
+>>>>>> The element chosen is 22 at the position (1, 6)
+>>>> Pivotating element at position (1, 6)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(135, 22) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-135, 22)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(157, 22) Fraction(0, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-786, 1)]
+ [Fraction(1, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-1, 22)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 22) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(141, 1)]
+ [Fraction(-36, 11) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(36, 11)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-36, 11) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(497, 1)]
+ [Fraction(157, 22) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-157, 22)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(157, 22) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(45774, 1)]
+ [Fraction(45, 11) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-45, 11)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(45, 11) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(26159, 1)]
+ [Fraction(12, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-12, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(12, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(76573, 1)]
+ [Fraction(-63, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(63, 22)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(-63, 22) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(289, 1)]]
+###################################################################
+>>>> Searching for element to pivotate
+>>>>>> The element chosen is 63/22 at the position (6, 7)
+>>>> Pivotating element at position (6, 7)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(0, 1) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-8, 7) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-8, 7) Fraction(1, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(15, 7) Fraction(-1167, 7)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 63) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 63) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 63) Fraction(9172, 63)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(8, 7) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(8, 7) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-8, 7) Fraction(1167, 7)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-157, 63) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-157, 63) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(157, 63) Fraction(2929135, 63)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(-10, 7) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(-10, 7) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(10, 7) Fraction(186003, 7)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(-88, 21) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(-88, 21) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(88, 21) Fraction(1633465, 21)]
+ [Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-22, 63) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-22, 63) Fraction(-1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(22, 63) Fraction(6358, 63)]]
+###################################################################
+>>>> Searching for element to pivotate
+>>>>>> The element chosen is 8/7 at the position (2, 5)
+>>>> Pivotating element at position (2, 5)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(0, 1)]
+ [Fraction(0, 1) Fraction(1, 72) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(-1, 72) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 72) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(10649, 72)]
+ [Fraction(0, 1) Fraction(7, 8) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-7, 8) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(7, 8) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(-1, 1) Fraction(1167, 8)]
+ [Fraction(0, 1) Fraction(157, 72) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-157, 72) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(157, 72) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(3373757, 72)]
+ [Fraction(0, 1) Fraction(5, 4) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-5, 4) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(5, 4) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(107121, 4)]
+ [Fraction(0, 1) Fraction(11, 3) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-11, 3) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(11, 3) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(235186, 3)]
+ [Fraction(-1, 1) Fraction(11, 36) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(-11, 36) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 1) Fraction(11, 36) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(5467, 36)]]
+###################################################################
+>>>> There is no entry in c to optimize. Simplex is over.
+###################################################################
+>> Maximum objective value: 0
+>> Optimality certificate: [[Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(1, 1) Fraction(1, 1)
+  Fraction(1, 1) Fraction(1, 1) Fraction(1, 1) Fraction(0, 1)]]
+###################################################################
+>>>> Pivotating element at position (1, 6)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-199, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-199, 22)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(28059, 1)]
+ [Fraction(-1, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-1, 22)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(141, 1)]
+ [Fraction(-36, 11) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-36, 11)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-497, 1)]
+ [Fraction(-157, 22) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-157, 22)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(45774, 1)]
+ [Fraction(-45, 11) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-45, 11)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(26159, 1)]
+ [Fraction(-12, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-12, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(76573, 1)]
+ [Fraction(-63, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-63, 22)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(-289, 1)]]
+###################################################################
+>>>> Pivotating element at position (2, 5)
+>>>> Pivotating element at position (3, 2)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-199, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-199, 22)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(28059, 1)]
+ [Fraction(-1, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-1, 22)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(141, 1)]
+ [Fraction(-36, 11) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-36, 11)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-497, 1)]
+ [Fraction(-157, 22) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-157, 22)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(45774, 1)]
+ [Fraction(-45, 11) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-45, 11)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(26159, 1)]
+ [Fraction(-12, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-12, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(76573, 1)]
+ [Fraction(-63, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-63, 22)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(-289, 1)]]
+###################################################################
+>>>> Pivotating element at position (4, 3)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-199, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-199, 22)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(28059, 1)]
+ [Fraction(-1, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-1, 22)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(141, 1)]
+ [Fraction(-36, 11) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-36, 11)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-497, 1)]
+ [Fraction(-157, 22) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-157, 22)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(45774, 1)]
+ [Fraction(-45, 11) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-45, 11)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(26159, 1)]
+ [Fraction(-12, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-12, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(76573, 1)]
+ [Fraction(-63, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-63, 22)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(-289, 1)]]
+###################################################################
+>>>> Pivotating element at position (5, 4)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(-199, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-199, 22)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(28059, 1)]
+ [Fraction(-1, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(-1, 22)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(141, 1)]
+ [Fraction(-36, 11) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-36, 11)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-497, 1)]
+ [Fraction(-157, 22) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-157, 22)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(45774, 1)]
+ [Fraction(-45, 11) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-45, 11)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(26159, 1)]
+ [Fraction(-12, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(-12, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(76573, 1)]
+ [Fraction(-63, 22) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(-63, 22)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(-289, 1)]]
+###################################################################
+>>>> Pivotating element at position (6, 7)
+>>>>>> DONE.
+>>>> Tableau after the pivotation: 
+###################################################################
+[[Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-199, 63) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-199, 63) Fraction(1825228, 63)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-1, 63) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-1, 63) Fraction(9172, 63)]
+ [Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-8, 7) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-8, 7) Fraction(-1167, 7)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-157, 63) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(1, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-157, 63) Fraction(2929135, 63)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(-10, 7) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(1, 1) Fraction(0, 1)
+  Fraction(-10, 7) Fraction(186003, 7)]
+ [Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(1, 1) Fraction(-88, 21) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(1, 1)
+  Fraction(-88, 21) Fraction(1633465, 21)]
+ [Fraction(1, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(0, 1) Fraction(-22, 63) Fraction(0, 1) Fraction(1, 1)
+  Fraction(0, 1) Fraction(0, 1) Fraction(0, 1) Fraction(0, 1)
+  Fraction(-22, 63) Fraction(6358, 63)]]
+###################################################################
+###################################################################
+>> Starting Primal Simplex
+###################################################################
+[-1, 7, 8, 9, 10, 11, 12]
+>>>> Searching for element to pivotate
+>>>> There is no more elements to pivotate.
+>>>> The LP is unbounded! <<<<

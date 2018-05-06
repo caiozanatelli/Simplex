@@ -23,4 +23,4 @@ class IOUtils:
         #    for j in range(matrix.shape[1]):
         #        matrix[i][j] = Fraction(matrix[i][j])
 
-        return matrix
+        return n, m, matrix
