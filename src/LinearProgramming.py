@@ -82,22 +82,22 @@ class LinearProgramming:
         """
         print(">>>> Creating tableau for the linear programming...")
         print(">>>>>> DONE.")
-    
-        # Extracting components information from the linear programming
-        c = input_matrix[0][:-1]
-        A = input_matrix[1:,:-1]
-        b = np.matrix(input_matrix[1:, -1])
-        aux_vars_fpi = np.identity(self.__num_rows)
-        hist_op = np.concatenate((np.zeros((1, self.__num_rows)), np.identity(self.__num_rows)), axis=0)
-        
-        # Setting tableau by concatenating all the arrays involved
-        self.__tableau = np.column_stack((np.column_stack((hist_op,
-                            np.row_stack((-1*c, A)))),
-                            np.concatenate((np.zeros((1, 1)), b.T), axis=0)))
+
+        rows = input_matrix.shape[0]
+        cols = input_matrix.shape[1] + rows - 1
+        tableau = np.zeros((rows, cols)).astype('object')
+
+        # Setting operation matrix in the tableau
+        tableau[0, 0:rows-1]  = np.zeros((1, rows - 1))
+        tableau[1:, 0:rows-1] = np.identity(rows - 1)
+        tableau[:, cols - 1] = input_matrix[:, -1]
+        tableau[:, rows-1:-1] = input_matrix[:, :-1]
+        tableau[0, :-1] = -tableau[0, :-1]
 
         print(">>>> Setting Tableau elements as fractions...")
         print(">>>>>> DONE.")
         
+        self.__tableau = tableau
         # Changing the tableau elements into fractions for better precision
         for i in xrange(0, self.__tableau.shape[0]):
             for j in xrange(0, self.__tableau.shape[1]):
