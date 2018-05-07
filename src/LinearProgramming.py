@@ -161,7 +161,7 @@ class LinearProgramming:
 
     def get_optimality_certificate(self):
         """
-        Return the optimality certificate for the LP. 
+        Return the optimality certificate for the LP (Primal Simplex). 
 
         This certificate is obtained from the matrix that register the 
         operations over the tableau.

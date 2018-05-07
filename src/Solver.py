@@ -2,8 +2,8 @@ from IOUtils import IOUtils
 from LinearProgramming import LinearProgramming
 from Simplex import Simplex
 
-LP_DIR_IN   = "../tests/toys/teste2.txt"
-RES_DIR_OUT = "../tests/toys/saida_teste2.txt"
+LP_DIR_IN   = "../tests/toys/teste3.txt"
+RES_DIR_OUT = "../tests/toys/saida_teste3.txt"
 
 if __name__ == '__main__':
     io = IOUtils(LP_DIR_IN, RES_DIR_OUT)

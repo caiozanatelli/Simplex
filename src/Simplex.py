@@ -36,7 +36,15 @@ class Simplex:
         # The c array is in optimum state. Dual Simplex must be used
         if index_neg_entry_in_c < 0:
             print(">> The c array is in optimum status: Dual Simplex will be used.")
-            self.__apply_dual_simplex()
+            
+            status, certificate, obj_value = self.__apply_dual_simplex()
+            message = str(status) + "\n"
+            if status == self.LP_FEASIBLE_BOUNDED:
+                message = message
+            elif status == self.LP_INFEASIBLE:
+                message = message
+            else:
+                print(">>>> Something terrible happened. Dual Simplex should never lead to unbounded!")
         else:
             print(">> The c array is not in optimum status: Primal Simplex will be used.")
             
@@ -59,7 +67,6 @@ class Simplex:
                 if status == self.LP_FEASIBLE_BOUNDED:
                     message = message + str(solution) + "\n" + str(obj_value) + "\n" + str(opt_certificate)
                     self.__io_utils.write_output(message)
-                
             else:
                 print(">>>> There are negative entries in b. An auxiliar LP is needed.")
                 print(">>>> Creating auxiliar LP to find a feasible basic solution to the problem")
@@ -310,18 +317,29 @@ class Simplex:
                                      + " at the position (" + str(row) + ", " + str(col) + ")")
                 self.__pivotate_element(row, col) # Pivotate the chosen element
 
+        # Check whether the LP is feasible
         if is_lp_feasible:
-            obj_value = self.__lp.get_objective_value()
-            optimality_certificate = self.__lp.get_optimality_certificate()
+            obj_value = round(self.__lp.get_objective_value(), 6)
+            optimality_certificate = list(self.__lp.get_optimality_certificate())
+            
+            # Turn the values into float
+            for i in xrange(len(optimality_certificate)):
+                optimality_certificate[i] = round(optimality_certificate[i], 6)
 
+            IOUtils.print_header_line_screen()
             print(">> Maximum objective value: " + str(obj_value))
             print(">> Optimality certificate: "  + str(optimality_certificate))
             IOUtils.print_header_line_screen()
 
-            return self.LP_FEASIBLE_BOUNDED, obj_value, optimality_certificate
+            return (self.LP_FEASIBLE_BOUNDED, optimality_certificate, obj_value)
         else:
-            infeasible_certificate = []
-            return self.LP_INFEASIBLE, infeasible_certificate
+            # Get the infeasibility certificate from the operation matrix
+            infeasible_certificate = self.__lp.get_tableau()[row, 0:num_rows - 1]
+            # Turn the values into float
+            for i in xrange(len(infeasible_certificate)):
+                infeasible_certificate[i] = round(infeasible_certificate[i], 6)
+
+            return (self.LP_INFEASIBLE, infeasible_certificate, 0)
 
 
     def __get_dual_pivot_element(self, neg_entry_index):
