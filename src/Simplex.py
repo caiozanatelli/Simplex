@@ -37,14 +37,16 @@ class Simplex:
         if index_neg_entry_in_c < 0:
             print(">> The c array is in optimum status: Dual Simplex will be used.")
             
-            status, certificate, obj_value = self.__apply_dual_simplex()
+            status, certificate, obj_value, solution = self.__apply_dual_simplex()
             message = str(status) + "\n"
             if status == self.LP_FEASIBLE_BOUNDED:
-                message = message
+                message = message + str(solution) + "\n" + str(obj_value) + "\n" + str(certificate)
             elif status == self.LP_INFEASIBLE:
-                message = message
+                message = message + str(certificate)
             else:
                 print(">>>> Something terrible happened. Dual Simplex should never lead to unbounded!")
+                exit(1)
+            self.__io_utils.write_output(message)
         else:
             print(">> The c array is not in optimum status: Primal Simplex will be used.")
             
@@ -91,17 +93,17 @@ class Simplex:
                     for i in range(1, rows):
                         self.__pivotate_element(i, base_columns[i])
                     
+                    # Apply the Primal Simplex Algorithm and get the result
                     status,certificate,obj_value,feasible_base,sol = self.__apply_primal_simplex(base_columns)
-                    
-                    # Store the string to print to the output file
                     message = str(status) + "\n"
                     if status == self.LP_FEASIBLE_BOUNDED:
                         message = message + str(solution) + "\n" + str(obj_value) + "\n" + str(opt_certificate)
-                        self.__io_utils.write_output(message)
                         print("Solution: " + str(solution))
                     elif status == self.LP_FEASIBLE_UNBOUNDED:
                         message = message + str(certificate)
-                        self.__io_utils.write_output(message)
+
+                    # Print the result to the output file
+                    self.__io_utils.write_output(message)
                 
                 elif aux_obj_value < 0:
                     print(">>>> The original LP is infeasible.")
@@ -110,6 +112,7 @@ class Simplex:
                     self.__io_utils.write_output(message)
                 else:
                     print(">>>> Something terrible happened. The objective value is negative, and that is such an heresy!")
+                    exit(1)
 
 
     def __pivotate_element(self, row, col):
@@ -222,7 +225,7 @@ class Simplex:
 
             IOUtils.print_header_line_screen()
             print(">> Maximum objective value: " + str(obj_value))
-            print(">> Solution: " + str(solution))
+            print(">> Solution: "                + str(solution))
             print(">> Optimality certificate: "  + str(optimality_certificate))
             IOUtils.print_header_line_screen()
 
@@ -293,6 +296,8 @@ class Simplex:
         num_cols = self.__lp.get_tableau_num_cols()
         is_lp_feasible = True
 
+        feasible_base_columns = [-1]*num_rows
+
         while True:
             neg_entry_in_b = self.__lp.get_first_neg_entry_row_in_b()
 
@@ -315,23 +320,36 @@ class Simplex:
             else:
                 print(">>>>>> The element chosen is " + str(self.__lp.get_tableau_elem(row, col))
                                      + " at the position (" + str(row) + ", " + str(col) + ")")
+
                 self.__pivotate_element(row, col) # Pivotate the chosen element
+                feasible_base_columns[row] = col
 
         # Check whether the LP is feasible
         if is_lp_feasible:
             obj_value = round(self.__lp.get_objective_value(), 6)
             optimality_certificate = list(self.__lp.get_optimality_certificate())
-            
+
+            num_vars = num_cols - 2*num_rows + 1
+            solution = [0]*num_vars # Starting solution with zeros
+            for i in xrange(self.__lp.get_LP_init_column(), num_cols - num_rows):
+                # If this column belongs to the base, then we add b solution to the variable its variable
+                if i in feasible_base_columns:
+                    row_sol_base = feasible_base_columns.index(i)
+                    solution[i - num_rows + 1] = self.__lp.get_tableau_elem(row_sol_base, num_cols - 1)
+
             # Turn the values into float
+            for i in xrange(num_vars): 
+                solution[i] = round(solution[i], 6)
             for i in xrange(len(optimality_certificate)):
                 optimality_certificate[i] = round(optimality_certificate[i], 6)
 
             IOUtils.print_header_line_screen()
             print(">> Maximum objective value: " + str(obj_value))
+            print(">> Solution: "                + str(solution))
             print(">> Optimality certificate: "  + str(optimality_certificate))
             IOUtils.print_header_line_screen()
 
-            return (self.LP_FEASIBLE_BOUNDED, optimality_certificate, obj_value)
+            return (self.LP_FEASIBLE_BOUNDED, optimality_certificate, obj_value, solution)
         else:
             # Get the infeasibility certificate from the operation matrix
             infeasible_certificate = self.__lp.get_tableau()[row, 0:num_rows - 1]
@@ -339,7 +357,7 @@ class Simplex:
             for i in xrange(len(infeasible_certificate)):
                 infeasible_certificate[i] = round(infeasible_certificate[i], 6)
 
-            return (self.LP_INFEASIBLE, infeasible_certificate, 0)
+            return (self.LP_INFEASIBLE, infeasible_certificate, 0, None)
 
 
     def __get_dual_pivot_element(self, neg_entry_index):
