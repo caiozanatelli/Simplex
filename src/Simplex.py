@@ -20,7 +20,7 @@ class Simplex:
         IOUtils.print_header_line_screen()
 
         # Create the tableau that represents the linear programming
-        self.__lp = LinearProgramming(2, 3, input_matrix)
+        self.__lp = LinearProgramming(num_rows, num_cols, input_matrix)
         # Set the c objective function and the b array
         self.__obj_func_c = input_matrix[0][:-1]
 
@@ -45,15 +45,17 @@ class Simplex:
                 base = simplex_result[2]
 
                 num_vars = self.__lp.get_tableau_num_cols() - 2*self.__lp.get_tableau_num_rows() + 1
-                solution = [0]*num_vars
+                solution = [0]*num_vars # Starting solution with zeros
+                
+                rows = self.__lp.get_tableau_num_rows()
+                cols = self.__lp.get_tableau_num_cols()
+                for i in xrange(self.__lp.get_LP_init_column(), cols - rows - 1):
+                    # If this column belongs to the base, then we add b solution to the variable its variable
+                    if i in base:
+                        row_sol_base = base.index(i)
+                        solution[i - rows + 1] = self.__lp.get_tableau_elem(row_sol_base, cols - 1)
 
-                # Getting solution from base
-                for i in xrange(1, len(base)):
-                    r = base[i]
-                    if r < self.__lp.get_tableau_num_cols() - self.__lp.get_tableau_num_rows():
-                        solution[i] = self.__lp.get_tableau_elem(i, self.__lp.get_tableau_num_cols() - 1)
-
-                print(solution)
+                print("Solution: " + str(solution))
                 
             else:
                 print(">>>> There are negative entries in b. An auxiliar LP is needed.")

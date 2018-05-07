@@ -1,5 +1,6 @@
 import numpy as np
 from fractions import Fraction
+import sys
 
 class LinearProgramming:
     """
@@ -21,7 +22,6 @@ class LinearProgramming:
         self.__num_rows = num_rows
         self.__num_cols = num_cols
         self.__lp_init_col = num_rows
-        
         # Create the tableau
         self.__make_tableau(input_matrix)
         # Put tableau in canonical extended form
@@ -115,6 +115,15 @@ class LinearProgramming:
         return self.__tableau
 
 
+    def print_tableau(self):
+        for i in xrange(self.__tableau.shape[0]):
+            for j in xrange(self.__tableau.shape[1]):
+                elem = self.__tableau[i, j]
+                sys.stdout.write(str(elem) + " ")
+            print('')
+
+
+
     def get_LP_init_column(self):
         """
         Return the column index where the LP starts in the tableau.
@@ -167,6 +176,8 @@ class LinearProgramming:
         Return the first index where there is a neg entry in c.
         Return -1 if there is none.
         """
+        #print(self.__lp_init_col)
+        #exit(0)
         for i in xrange(self.__lp_init_col, self.__tableau.shape[1] - 1):
             if (self.__tableau[0, i] < 0):
                 return i
