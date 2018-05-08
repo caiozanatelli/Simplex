@@ -28,6 +28,33 @@ class Simplex:
         self.__obj_func_c = input_matrix[0][:-1]
 
 
+
+    def __get_feasible_bounded_message(self, solution, obj_value, certificate):
+        message = "##############################\n"
+        message = message + ". : Feasible and Bounded : .\n"
+        message = message + "##############################\n"
+        message = message + "[+] Solution: " + str(solution) + "\n"  
+        message = message + "[+] Objective Value: " + str(obj_value) + "\n" 
+        message = message + "[+] Optimality Certificate: " + str(certificate) + "\n"
+        return message
+
+
+    def __get_feasible_unbounded_message(self, certificate):
+        message = "################################ \n"
+        message = message + " . : Feasible and Unbounded : .  \n"
+        message = message + "################################ \n"
+        message = message + "[+] Unbounded Certificate: " + str(certificate) + "\n"
+        return message
+
+
+    def __get_infeasible_message(self, certificate):
+        message = "####################\n"
+        message = message + " . : Infeasible : .\n "
+        message = message + "####################\n"
+        message = message + "[+] Infeasibility Certificate: " + str(certificate) + "\n"
+        return message
+
+
     def solve(self):
         """
         Main method to solve a linear programming problem. All the possible situations are
@@ -40,7 +67,23 @@ class Simplex:
         # Get the neg entries in both c and b arrays from the tableau
         index_neg_entry_in_c   = self.__lp.get_first_neg_entry_col_in_c()
         index_list_b_neg_values = self.__lp.get_b_neg_entries_rows()
-        
+
+        ############################################################################################
+        # First we need to make some verifications so that Simplex will work fine without any loop #
+        ############################################################################################
+
+        # If there's a row with all variables = 0 and b != 0 (absurd). There is no solution then.
+        is_inconsistent_row = self.__lp.is_any_row_inconsistent()
+        if is_inconsistent_row > 0:
+            message = "No solution possible. Equation " + str(is_inconsistent_row) + " is an absurd.\n\n"
+            
+            # Saving logs
+            print(message + self.__lp.print_tableau())
+            self.__io_utils.write_output(message + self.__lp.print_tableau())
+            logging.debug(message + self.__lp.print_tableau())
+            exit(0)
+
+
         # The c array is in optimum state. Dual Simplex must be used
         if index_neg_entry_in_c < 0:
             logging.debug(">> The c array is in optimum status: Dual Simplex will be used.")
@@ -50,21 +93,14 @@ class Simplex:
 
             if status == self.LP_FEASIBLE_BOUNDED:
                 message = message + str(solution) + "\n" + str(obj_value) + "\n" + str(certificate)
-                
                 # Log on the screen
-                print("##############################     \n" +
-                      " . : Feasible and Bounded : .      \n " +
-                      "##############################     \n" +
-                      "[+] Solution: " + str(solution) + "\n" +
-                      "[+] Objective Value: " + str(obj_value) + "\n" +
-                      "[+] Optimality Certificate: " + str(certificate) + "\n")
+                print(self.__get_feasible_bounded_message(solution, obj_value, certificate))
 
             elif status == self.LP_INFEASIBLE:
                 message = message + str(certificate)
 
                 # Log on the screen
-                print("[+] . : Infeasible : .\n " +
-                      "[+] Infeasibility Certificate: " + str(certificate) + "\n")
+                print(self.__get_infeasible_message(certificate))
             else:
                 message = ">>>> Something terrible happened. Dual Simplex should never lead to unbounded!"
                 logging.debug(message)
@@ -92,23 +128,12 @@ class Simplex:
                 message = str(status) + "\n"
                 if status == self.LP_FEASIBLE_BOUNDED:
                     message = message + str(solution) + "\n" + str(obj_value) + "\n" + str(certificate)
-
                     # Log on the screen
-                    print("############################## \n" + 
-                          " . : Feasible and Bounded : .\n " +
-                          "############################## \n" +
-                          "[+] Solution: " + str(solution) + "\n" +
-                          "[+] Objective Value: " + str(obj_value) + "\n" +
-                          "[+] Optimality Certificate: " + str(certificate) + "\n")
-
+                    print(self.__get_feasible_bounded_message(solution, obj_value, certificate))
                 elif status == self.LP_FEASIBLE_UNBOUNDED:
                     message = message + str(certificate)
                     # Log on the screen
-                    print("################################ \n" +
-                          " . : Feasible and Unbounded : .  \n " +
-                          "################################ \n" +
-                          "[+] Unbounded Certificate: " + str(certificate) + "\n")
-
+                    print(self.__get_feasible_unbounded_message(certificate))
                 else:
                     message = ">>>> Something terrible happened. The objective value is negative, and that is such an heresy!"
                     loggin.debug(message)
@@ -145,23 +170,12 @@ class Simplex:
                     message = str(status) + "\n"
                     if status == self.LP_FEASIBLE_BOUNDED:
                         message = message + str(solution) + "\n" + str(obj_value) + "\n" + str(certificate)
-
                         # Log on the screen
-                        print("###############################    \n" + 
-                              " . : Feasible and Bounded : .      \n " +
-                              "###############################    \n" + 
-                              "[+] Solution: " + str(solution) + "\n" +
-                              "[+] Objective Value: " + str(obj_value) + "\n" +
-                              "[+] Optimality Certificate: " + str(certificate) + "\n")
-                    
+                        print(self.__get_feasible_bounded_message(solution, obj_value, certificate))
                     elif status == self.LP_FEASIBLE_UNBOUNDED:
                         message = message + str(certificate)
-
                         # Log on the screen
-                        print("############################### \n" + 
-                              " . : Feasible and Unounded : .  \n" +
-                              "############################### \n" +
-                              "[+] Unbounded Certificate: " + str(certificate) + "\n")
+                        print(self.__get_feasible_unbounded_message(certificate))
 
                     # Print the result to the output file
                     self.__io_utils.write_output(message)
@@ -172,12 +186,8 @@ class Simplex:
 
                     message = str(self.LP_INFEASIBLE) + "\n" + str(certificate)
                     self.__io_utils.write_output(message)
-                    
                     # Log on the screen
-                    print("#################### \n" +
-                          " . : Infeasible : .  \n " +
-                          "#################### \n" + 
-                          "[+] Infeasibility Certificate: " + str(certificate) + "\n")
+                    print(self.__get_infeasible_message(certificate))
                 else:
                     message = ">>>> Something terrible happened. The objective value is negative, and that is such an heresy!"
                     logging.debug(message)

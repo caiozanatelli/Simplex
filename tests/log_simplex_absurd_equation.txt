@@ -1,0 +1,16 @@
+################################################################################
+>> Starting Simplex.
+################################################################################
+>>>> Creating tableau for the linear programming...
+>>>>>> DONE.
+>>>> Setting Tableau elements as fractions...
+>>>>>> DONE.
+>>>> Generating extended canonical tableau...
+>>>>>> DONE.
+No solution possible. Equation 3 is an absurd.
+
+0.0  0.0  0.0  -1.0  -2.0  -3.0  0.0  0.0  0.0  0.0  
+1.0  0.0  0.0  1.0  1.0  1.0  1.0  0.0  0.0  2.0  
+0.0  1.0  0.0  0.0  -1.0  3.0  0.0  1.0  0.0  9.0  
+0.0  0.0  1.0  0.0  0.0  0.0  0.0  0.0  1.0  4.0  
+

@@ -138,6 +138,40 @@ class LinearProgramming:
         return self.__lp_init_col
 
 
+    def is_b_all_null(self):
+        """
+        Check whether the b array is all zero. In this case, the LP
+        is feasible and bounded and the corresponding solution is the
+        trivial one.
+        """
+        for i in xrange(1, self.__tableau.shape[0]):
+            if self.__tableau[i, self.__tableau.shape[1] - 1] != 0:
+                return False
+        return True
+
+
+    def is_any_row_inconsistent(self):
+        """
+        Check whether there is a row such that at least all variables are
+        equal to zero and the b entry is different than zero. In this case,
+        this equation is an absurd and hence there is no solution to the LP.
+        """
+        rows = self.__tableau.shape[0]
+        cols = self.__tableau.shape[1]
+        for i in xrange(1, rows):
+            is_row_null = True
+            for j in xrange(self.__lp_init_col, cols - 1 - rows):
+                if self.__tableau[i, j] != 0:
+                    is_row_null = False
+                    break
+            if is_row_null == True and self.__tableau[i, self.__tableau.shape[1] - 1] != 0:
+                return i
+
+        return -1
+
+
+
+
     def get_tableau_elem(self, i, j):
         """
         Return the element at position (i, j) in the tableau
