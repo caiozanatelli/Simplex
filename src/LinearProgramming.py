@@ -1,5 +1,6 @@
 import numpy as np
 from fractions import Fraction
+import logging
 import sys
 
 class LinearProgramming:
@@ -29,8 +30,8 @@ class LinearProgramming:
 
 
     def get_extended_canonical_tableau(self):
-        print(">>>> Generating extended canonical tableau...")
-        print(">>>>>> DONE.")
+        logging.debug(">>>> Generating extended canonical tableau...")
+        logging.debug(">>>>>> DONE.")
 
         orig_tableau = np.copy(self.__tableau)
         num_rows = self.get_tableau_num_rows()
@@ -80,8 +81,8 @@ class LinearProgramming:
         Create the extended tableau for representing the linear programming.
         This method also puts the LP in FPI.
         """
-        print(">>>> Creating tableau for the linear programming...")
-        print(">>>>>> DONE.")
+        logging.debug(">>>> Creating tableau for the linear programming...")
+        logging.debug(">>>>>> DONE.")
 
         rows = input_matrix.shape[0]
         cols = input_matrix.shape[1] + rows - 1
@@ -94,8 +95,8 @@ class LinearProgramming:
         tableau[:, rows-1:-1] = input_matrix[:, :-1]
         tableau[0, :-1] = -tableau[0, :-1]
 
-        print(">>>> Setting Tableau elements as fractions...")
-        print(">>>>>> DONE.")
+        logging.debug(">>>> Setting Tableau elements as fractions...")
+        logging.debug(">>>>>> DONE.")
         
         self.__tableau = tableau
         # Changing the tableau elements into fractions for better precision
@@ -116,12 +117,14 @@ class LinearProgramming:
 
 
     def print_tableau(self):
+        tableau_str = ""
         for i in xrange(self.__tableau.shape[0]):
             for j in xrange(self.__tableau.shape[1]):
-                elem = self.__tableau[i, j]
-                sys.stdout.write(str(elem) + " ")
-            print('')
+                elem = round(self.__tableau[i, j], 4)
+                tableau_str = tableau_str + str(elem) + "  "
+            tableau_str = tableau_str + "\n"
 
+        return tableau_str
 
 
     def get_LP_init_column(self):

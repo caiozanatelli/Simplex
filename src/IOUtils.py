@@ -2,6 +2,9 @@ import numpy as np
 from fractions import Fraction
 
 class IOUtils:
+    """
+    Class for input/output manipulation.
+    """
 
     __file_in  = None
     __file_out = None
@@ -17,11 +20,11 @@ class IOUtils:
 
 
     def read_input(self):
+        """
+        Read the input according to the specification.
+        """
         n = int(self.__file_in.readline())
         m = int(self.__file_in.readline())
-
-        print("Number of lines:   " + str(n)
-              + "\nNumber of columns: " + str(m))
 
         matrix_str = self.__file_in.read()
         matrix = np.array(eval(matrix_str)).astype('object')
@@ -30,9 +33,15 @@ class IOUtils:
 
 
     def write_output(self, message):
+        """
+        Write a message to the output file.
+        """
         self.__file_out.write(message)
 
 
     @classmethod
     def print_header_line_screen(cls):
-        print("###################################################################")
+        """
+        Static method used to draw a line.
+        """
+        return "################################################################################"

@@ -1,17 +1,25 @@
 from IOUtils import IOUtils
 from LinearProgramming import LinearProgramming
 from Simplex import Simplex
+import logging
+import sys
 
-LP_DIR_IN   = "../tests/toys/teste3.txt"
-RES_DIR_OUT = "../tests/toys/saida_teste3.txt"
+#LP_DIR_IN   = "../tests/toys/teste6.txt"
+RES_DIR_OUT = "conclusao.txt"
+LOG_DIR     = "log_simplex.txt"
 
 if __name__ == '__main__':
-    io = IOUtils(LP_DIR_IN, RES_DIR_OUT)
-    #input_matrix = io.read_input("../tests/spec_test.txt")
-    #input_matrix = io.read_input("../tests/aux_pl.txt")
-    #input_matrix = io.read_input("../tests/aux_pl_marzano.txt")
+    # Setting logger to register all the operations made in the Simplex Algorithm
+    logging.basicConfig(filename = LOG_DIR, level = logging.DEBUG, format='%(message)s', filemode='w')
+    logging.getLogger()
 
+    # Get the input file through a parameter
+    input_file = sys.argv[1]
+
+    # Reading the input
+    io = IOUtils(input_file, RES_DIR_OUT)
     rows, cols, input_matrix = io.read_input()
 
+    # Solving the linear programming through Simplex Algorithm
     simplex = Simplex(rows, cols, input_matrix, io)
     simplex.solve()

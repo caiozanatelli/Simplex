@@ -3,6 +3,7 @@ from fractions import Fraction
 from LinearProgramming import LinearProgramming
 from IOUtils import IOUtils
 from copy import deepcopy
+import logging
 
 class Simplex:
     LP_INFEASIBLE         = 0
@@ -16,9 +17,9 @@ class Simplex:
 
 
     def __init__(self, num_rows, num_cols, input_matrix, io_utils):
-        IOUtils.print_header_line_screen()
-        print(">> Starting Simplex...")
-        IOUtils.print_header_line_screen()
+        logging.debug(IOUtils.print_header_line_screen())
+        logging.debug(">> Starting Simplex.")
+        logging.debug(IOUtils.print_header_line_screen())
 
         self.__io_utils = io_utils
         # Create the tableau that represents the linear programming
@@ -28,6 +29,13 @@ class Simplex:
 
 
     def solve(self):
+        """
+        Main method to solve a linear programming problem. All the possible situations are
+        evaluated in order to decide which Simplex algorithm to use (Primal or Dual).
+
+        All operations are stored in a log file.
+        """
+
         IOUtils.print_header_line_screen()
         # Get the neg entries in both c and b arrays from the tableau
         index_neg_entry_in_c   = self.__lp.get_first_neg_entry_col_in_c()
@@ -35,20 +43,36 @@ class Simplex:
         
         # The c array is in optimum state. Dual Simplex must be used
         if index_neg_entry_in_c < 0:
-            print(">> The c array is in optimum status: Dual Simplex will be used.")
+            logging.debug(">> The c array is in optimum status: Dual Simplex will be used.")
             
             status, certificate, obj_value, solution = self.__apply_dual_simplex()
             message = str(status) + "\n"
+
             if status == self.LP_FEASIBLE_BOUNDED:
                 message = message + str(solution) + "\n" + str(obj_value) + "\n" + str(certificate)
+                
+                # Log on the screen
+                print("##############################     \n" +
+                      " . : Feasible and Bounded : .      \n " +
+                      "##############################     \n" +
+                      "[+] Solution: " + str(solution) + "\n" +
+                      "[+] Objective Value: " + str(obj_value) + "\n" +
+                      "[+] Optimality Certificate: " + str(certificate) + "\n")
+
             elif status == self.LP_INFEASIBLE:
                 message = message + str(certificate)
+
+                # Log on the screen
+                print("[+] . : Infeasible : .\n " +
+                      "[+] Infeasibility Certificate: " + str(certificate) + "\n")
             else:
-                print(">>>> Something terrible happened. Dual Simplex should never lead to unbounded!")
-                exit(1)
+                message = ">>>> Something terrible happened. Dual Simplex should never lead to unbounded!"
+                logging.debug(message)
+                print(message)
+
             self.__io_utils.write_output(message)
         else:
-            print(">> The c array is not in optimum status: Primal Simplex will be used.")
+            logging.debug(">> The c array is not in optimum status: Primal Simplex will be used.")
             
             feasible_base_columns = []
             feasible_base_columns.append(-1) # There's no pivot in the c row
@@ -56,22 +80,45 @@ class Simplex:
             cols = self.__lp.get_tableau_num_cols()
 
             if not index_list_b_neg_values:
-                print(">>>> All entries in b are non-negative. No need for an auxiliar LP.")
+                logging.debug(">>>> All entries in b are non-negative. No need for an auxiliar LP.")
                 
                 # Store the initial columns that make the basic solution
                 for i in range(1, rows):
                     feasible_base_columns.append(cols - rows - 1 + i)
 
                 # Apply Primal Simplex and get the result
-                status,opt_certificate,obj_value,feasible_base,solution = self.__apply_primal_simplex(feasible_base_columns)                
+                status,certificate,obj_value,feasible_base,solution = self.__apply_primal_simplex(feasible_base_columns)                
                 # Store the string to print to the output file
                 message = str(status) + "\n"
                 if status == self.LP_FEASIBLE_BOUNDED:
-                    message = message + str(solution) + "\n" + str(obj_value) + "\n" + str(opt_certificate)
-                    self.__io_utils.write_output(message)
+                    message = message + str(solution) + "\n" + str(obj_value) + "\n" + str(certificate)
+
+                    # Log on the screen
+                    print("############################## \n" + 
+                          " . : Feasible and Bounded : .\n " +
+                          "############################## \n" +
+                          "[+] Solution: " + str(solution) + "\n" +
+                          "[+] Objective Value: " + str(obj_value) + "\n" +
+                          "[+] Optimality Certificate: " + str(certificate) + "\n")
+
+                elif status == self.LP_FEASIBLE_UNBOUNDED:
+                    message = message + str(certificate)
+                    # Log on the screen
+                    print("################################ \n" +
+                          " . : Feasible and Unbounded : .  \n " +
+                          "################################ \n" +
+                          "[+] Unbounded Certificate: " + str(certificate) + "\n")
+
+                else:
+                    message = ">>>> Something terrible happened. The objective value is negative, and that is such an heresy!"
+                    loggin.debug(message)
+                    print(message)
+
+                # Store the final result in the output file
+                self.__io_utils.write_output(message)
             else:
-                print(">>>> There are negative entries in b. An auxiliar LP is needed.")
-                print(">>>> Creating auxiliar LP to find a feasible basic solution to the problem")
+                logging.debug(">>>> There are negative entries in b. An auxiliar LP is needed.")
+                logging.debug(">>>> Creating auxiliar LP to find a feasible basic solution to the problem")
 
                 # Create an auxiliar LP to find a basic solution to the original problem
                 simplex_aux = deepcopy(self)
@@ -94,32 +141,54 @@ class Simplex:
                         self.__pivotate_element(i, base_columns[i])
                     
                     # Apply the Primal Simplex Algorithm and get the result
-                    status,certificate,obj_value,feasible_base,sol = self.__apply_primal_simplex(base_columns)
+                    status,certificate,obj_value,feasible_base,solution = self.__apply_primal_simplex(base_columns)
                     message = str(status) + "\n"
                     if status == self.LP_FEASIBLE_BOUNDED:
-                        message = message + str(solution) + "\n" + str(obj_value) + "\n" + str(opt_certificate)
-                        print("Solution: " + str(solution))
+                        message = message + str(solution) + "\n" + str(obj_value) + "\n" + str(certificate)
+
+                        # Log on the screen
+                        print("###############################    \n" + 
+                              " . : Feasible and Bounded : .      \n " +
+                              "###############################    \n" + 
+                              "[+] Solution: " + str(solution) + "\n" +
+                              "[+] Objective Value: " + str(obj_value) + "\n" +
+                              "[+] Optimality Certificate: " + str(certificate) + "\n")
+                    
                     elif status == self.LP_FEASIBLE_UNBOUNDED:
                         message = message + str(certificate)
 
+                        # Log on the screen
+                        print("############################### \n" + 
+                              " . : Feasible and Unounded : .  \n" +
+                              "############################### \n" +
+                              "[+] Unbounded Certificate: " + str(certificate) + "\n")
+
                     # Print the result to the output file
                     self.__io_utils.write_output(message)
-                
+                    
                 elif aux_obj_value < 0:
-                    print(">>>> The original LP is infeasible.")
-                    print(">>>> Infeasible certificate: " + str(certificate))
-                    message = message + str(certificate)
+                    logging.debug(">>>> The original LP is infeasible.")
+                    logging.debug(">>>> Infeasibility Certificate: " + str(certificate))
+
+                    message = str(self.LP_INFEASIBLE) + "\n" + str(certificate)
                     self.__io_utils.write_output(message)
+                    
+                    # Log on the screen
+                    print("#################### \n" +
+                          " . : Infeasible : .  \n " +
+                          "#################### \n" + 
+                          "[+] Infeasibility Certificate: " + str(certificate) + "\n")
                 else:
-                    print(">>>> Something terrible happened. The objective value is negative, and that is such an heresy!")
-                    exit(1)
+                    message = ">>>> Something terrible happened. The objective value is negative, and that is such an heresy!"
+                    logging.debug(message)
+                    print(message)
 
 
     def __pivotate_element(self, row, col):
         """
         Pivotate the element at position (row, col) in the tableau.
         """
-        print(">>>> Pivotating element at position (" + str(row) + ", " + str(col) + ")")
+        logging.debug(">>>> Pivotating element at position (" + str(row) + ", " + str(col) + ")")
 
         tableau_num_rows = self.__lp.get_tableau_num_rows()
         tableau_num_cols = self.__lp.get_tableau_num_cols()
@@ -151,11 +220,11 @@ class Simplex:
                 new_elem_value = curr_elem - sum_pivot_factor*elem_in_pivot_row
                 self.__lp.set_tableau_elem(i, j, new_elem_value)
 
-        print(">>>>>> DONE.")
-        print(">>>> Tableau after the pivotation: ")
-        IOUtils.print_header_line_screen()
-        print(self.__lp.get_tableau())
-        IOUtils.print_header_line_screen()
+        logging.debug(">>>>>> DONE.")
+        logging.debug(">>>> Tableau after the pivotation: ")
+        logging.debug(IOUtils.print_header_line_screen())
+        logging.debug(self.__lp.print_tableau())
+        logging.debug(IOUtils.print_header_line_screen())
 
 
     def __apply_primal_simplex(self, feasible_base_columns):
@@ -166,9 +235,9 @@ class Simplex:
         infeasible. The certificates, the objective values as well as the feasible
         base columns are returned in a tuple, when applicable.
         """
-        IOUtils.print_header_line_screen()
-        print(">> Starting Primal Simplex")
-        IOUtils.print_header_line_screen()
+        logging.debug(IOUtils.print_header_line_screen())
+        logging.debug(">> Starting Primal Simplex")
+        logging.debug(IOUtils.print_header_line_screen())
 
         num_rows = self.__lp.get_tableau_num_rows()
         num_cols = self.__lp.get_tableau_num_cols()
@@ -180,25 +249,24 @@ class Simplex:
 
             # There is no neg entry in c, then Primal Simplex is over
             if (neg_entry_index_in_c < 0):
-                print(">>>> There is no entry in c to optimize. Primal Simplex is over.")
-                IOUtils.print_header_line_screen()
+                logging.debug(">>>> There is no entry in c to optimize. Primal Simplex is over.")
+                logging.debug(IOUtils.print_header_line_screen())
 
                 is_lp_bounded = True
                 break
 
-            print(">>>> Searching for element to pivotate...")
+            logging.debug(">>>> Searching for element to pivotate...")
             # Choose one element (row, col) in the neg column to pivotate
             row, col = self.__get_primal_pivot_element(neg_entry_index_in_c)
 
             # There is no negative entry in the c array. The LP is then ilimited 
             if row < 0:
-                print(">>>> There is no more elements to pivotate.")
-                print(">>>> The LP is unbounded! <<<<")
-
+                logging.debug(">>>> There is no more elements to pivotate.")
+                logging.debug(">>>> The LP is unbounded! <<<<")
                 is_lp_bounded = False
                 break
             else: # The element to be pivotated has been chosen
-                print(">>>>>> The element chosen is " + str(self.__lp.get_tableau_elem(row, col))
+                logging.debug(">>>>>> The element chosen is " + str(self.__lp.get_tableau_elem(row, col))
                                      + " at the position (" + str(row) + ", " + str(col) + ")")
 
                 self.__pivotate_element(row, col) # Pivotate the chosen element
@@ -223,11 +291,11 @@ class Simplex:
             for i in xrange(len(optimality_certificate)):
                 optimality_certificate[i] = round(optimality_certificate[i], 6)
 
-            IOUtils.print_header_line_screen()
-            print(">> Maximum objective value: " + str(obj_value))
-            print(">> Solution: "                + str(solution))
-            print(">> Optimality certificate: "  + str(optimality_certificate))
-            IOUtils.print_header_line_screen()
+            logging.debug(IOUtils.print_header_line_screen())
+            logging.debug(">> Maximum objective value: " + str(obj_value))
+            logging.debug(">> Solution: "                + str(solution))
+            logging.debug(">> Optimality certificate: "  + str(optimality_certificate))
+            logging.debug(IOUtils.print_header_line_screen())
 
             # Return the id for a feasible bounded solution and the base columns associated
             return (self.LP_FEASIBLE_BOUNDED, optimality_certificate, obj_value, feasible_base_columns, solution)
@@ -246,6 +314,7 @@ class Simplex:
             for i in xrange(num_vars): # Turn the values into float
                 unbounded_certificate[i] = round(unbounded_certificate[i], 6)
             
+            logging.debug(">>>> Unbounded certificate: " + str(unbounded_certificate))
             return (self.LP_FEASIBLE_UNBOUNDED, unbounded_certificate, 0, None, None)
 
 
@@ -288,9 +357,9 @@ class Simplex:
         infeasible. The certificates, the objective values as well as the feasible
         base columns are returned in a tuple, when applicable.
         """
-        IOUtils.print_header_line_screen()
-        print(">> Starting Dual Simplex")
-        IOUtils.print_header_line_screen()
+        logging.debug(IOUtils.print_header_line_screen())
+        logging.debug(">> Starting Dual Simplex")
+        logging.debug(IOUtils.print_header_line_screen())
 
         num_rows = self.__lp.get_tableau_num_rows()
         num_cols = self.__lp.get_tableau_num_cols()
@@ -303,22 +372,22 @@ class Simplex:
 
             # There is no neg entry in b, then Dual Simplex is over
             if neg_entry_in_b < 0:
-                print(">>>> There is no negative entry in b. Dual Simplex is over.")
-                IOUtils.print_header_line_screen()
+                logging.debug(">>>> There is no negative entry in b. Dual Simplex is over.")
+                logging.debug(IOUtils.print_header_line_screen())
 
                 is_lp_feasible = True
                 break
 
-            print(">>>> Searching for element to pivotate...")
+            logging.debug(">>>> Searching for element to pivotate...")
             # Choose an element (row, col) in the neg row of b to pivotate
             row, col = self.__get_dual_pivot_element(neg_entry_in_b)
 
             if col < 0:
-                print(">>>> There is no more elements to pivotate.")
-                print(">>>> The LP is infeasible! <<<<")
+                logging.debug(">>>> There is no more elements to pivotate.")
+                logging.debug(">>>> The LP is infeasible! <<<<")
                 is_lp_feasible = False
             else:
-                print(">>>>>> The element chosen is " + str(self.__lp.get_tableau_elem(row, col))
+                logging.debug(">>>>>> The element chosen is " + str(self.__lp.get_tableau_elem(row, col))
                                      + " at the position (" + str(row) + ", " + str(col) + ")")
 
                 self.__pivotate_element(row, col) # Pivotate the chosen element
@@ -343,11 +412,11 @@ class Simplex:
             for i in xrange(len(optimality_certificate)):
                 optimality_certificate[i] = round(optimality_certificate[i], 6)
 
-            IOUtils.print_header_line_screen()
-            print(">> Maximum objective value: " + str(obj_value))
-            print(">> Solution: "                + str(solution))
-            print(">> Optimality certificate: "  + str(optimality_certificate))
-            IOUtils.print_header_line_screen()
+            logging.debug(IOUtils.print_header_line_screen())
+            logging.debug(">> Maximum objective value: " + str(obj_value))
+            logging.debug(">> Solution: "                + str(solution))
+            logging.debug(">> Optimality certificate: "  + str(optimality_certificate))
+            logging.debug(IOUtils.print_header_line_screen())
 
             return (self.LP_FEASIBLE_BOUNDED, optimality_certificate, obj_value, solution)
         else:
