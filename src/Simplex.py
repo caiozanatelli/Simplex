@@ -300,7 +300,6 @@ class Simplex:
             # Return the id for a feasible bounded solution and the base columns associated
             return (self.LP_FEASIBLE_BOUNDED, optimality_certificate, obj_value, feasible_base_columns, solution)
         else:
-            # TODO: Fix the unbounded certificate
             num_vars = num_cols - num_rows
             unbounded_certificate = [0]*num_vars
             unbounded_certificate[col - num_rows + 1] = 1
