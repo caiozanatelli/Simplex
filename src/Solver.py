@@ -22,8 +22,8 @@ if __name__ == '__main__':
 
     # Reading the input
     io = IOUtils(input_file, RES_DIR_OUT)
-    rows, cols, input_matrix = io.read_input()
+    alg_mode, rows, cols, input_matrix = io.read_input()
 
     # Solving the linear programming through Simplex Algorithm
     simplex = Simplex(rows, cols, input_matrix, io)
-    simplex.solve()
+    simplex.solve(alg_mode)

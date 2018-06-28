@@ -23,13 +23,14 @@ class IOUtils:
         """
         Read the input according to the specification.
         """
+        alg_mode = int(self.__file_in.readline())
         n = int(self.__file_in.readline())
         m = int(self.__file_in.readline())
 
         matrix_str = self.__file_in.read()
         matrix = np.array(eval(matrix_str)).astype('object')
 
-        return n, m, matrix
+        return alg_mode, n, m, matrix
 
 
     def write_output(self, message):
